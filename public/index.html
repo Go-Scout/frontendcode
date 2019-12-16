@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="GoScout" />
+      <title>GoScout Log-in</title>
+      <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+      <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  </head>
+  <body style="background: black;">
+    <div style="display: block; margin-top: 25vh;">
+      <img src="img/go-scout-logo.png" style="display: block; margin: 0 auto 0 auto; text-align: center;" alt="GoScout Logo" />
+      <br />
+      <br />
+      <div id="firebaseui-auth-container" style="display: flex; justify-content: center;"></div>
+      <div id="loader">Loading...</div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    firebase.analytics()
+  </script>
+</html>

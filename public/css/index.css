@@ -1,0 +1,32 @@
+* {box-sizing: border-box;}
+.navLink {
+    font-size: 1.5rem;
+    position: relative;
+}
+.nav-link:hover {
+    opacity: 1;
+}
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: white;
+}
+.nav-link-ltr::before {
+
+    width: 0%;
+    bottom: 10px;
+} 
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+.hr {
+    content: "";
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 600px;
+    margin-left: 600px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
