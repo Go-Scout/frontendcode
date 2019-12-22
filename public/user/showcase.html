@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="GoScout" />
+      <title>Showcases</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="icon" href="../img/logo.ico" />
+  </head>
+  <body>
+    <br />
+    <br />
+    <main class="container-fluid">
+        <div class="text-center mx-auto">
+            <button class="btn btn-outline-primary" type="button" id="download">Download Document</button>
+        </div>
+        <br />
+        <br />
+        <div class="col mx-auto text-center">
+            <button class="btn btn-outline-primary" type="button" id="loadData">
+                    Load Data
+            </button>
+            <button class="btn btn-outline-primary" type="button" id="saveData">
+                    Save Data
+            </button>
+            <button class="btn btn-outline-primary" type="button" id="generatePlayer">
+                Add New Player
+            </button>
+            <button class="btn btn-outline-primary" type="button" id="deletePlayer">
+                Delete Player
+            </button>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#body" role="tab">Body</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#hitting" role="tab">Hitting</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#fielding" role="tab">Fielding</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#catcher" role="tab">Fielding (Catcher Only)</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#throwing" role="tab">Throwing</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitchingd" role="tab">Pitching Delivery</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitchm" role="tab">Pitching Mechanics</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitch3" role="tab">Pitch 3</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitch" role="tab">Pitch</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#overall" role="tab">Overall Actions</a></li>
+                </ul>
+                <br />
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="body" role="tabpanel">
+                        <h6>Frame:</h6>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="lean" value="lean">Lean</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="proportional" value="proportional">Proportional</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="projectable" value="projectable">Projectable</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="mature" value="mature">Mature</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="solid" value="solid">Solid</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="sturdy" value="sturdy">Sturdy</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="physical" value="physical">Physical</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="lanky" value="lanky">Lanky</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="slim" value="slim">Slim</button>
+                    </div>
+                    <div class="tab-pane fade" id="hitting" role="tabpanel">
+                        <h6>Bat Speed:</h6>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="electric" value="electric">Electric</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="raw" value="raw">Raw</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="dragging" value="dragging">Dragging</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="lagging" value="lagging">Lagging</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="explosive" value="explosive">Explosive</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="quick" value="quick">Quick</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="aboveaverage" value="above average">Above Average</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="average" value="average">Average</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="below average" value="below average">Below Average</button>
+                        <br />
+                        <br />
+                        <h6>Swing Plane:</h6>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="short" value="short">Short</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="simple" value="simple">Simple</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="uphill" value="uphill">Uphill</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="long" value="long">Long</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="level" value="level">Level</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="flat" value="flat">Flat</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="straight-to-the-ball" value="straight-to-the-ball">Straight-to-the-ball</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="upward" value="upward">Upward</button>
+                        <br />
+                        <br />
+                        <h6>Finish:</h6>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="high" value="high">High</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="low" value="low">Low</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="level" value="level">Level</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="extension" value="extension">Extension</button>
+                        <br />
+                        <br />
+                        <h6>Approach:</h6>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="pullside" value="pull side">Pull Side</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="upthemiddle" value="up the middle">Up the Middle</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="oppositefield" value="opposite field">Opposite Field</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="gaptogap" value="gap to gap">Gap to Gap</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="linedrive" value="line drive">Line Drive</button>
+                        <button class="btn btn-outline-success" type="button" class="attBtn" id="basehit" value="base hit">Base Hit</button>
+                    </div>
+                    <div class="tab-pane fade" id="Fielding" role="tabpanel">Messages</div>
+                    <div class="tab-pane fade" id="catcher" role="tabpanel">Settings</div>
+                    <div class="tab-pane fade" id="throwing" role="tabpanel">Settings</div>
+                    <div class="tab-pane fade" id="pitchingd" role="tabpanel">Settings</div>
+                    <div class="tab-pane fade" id="pitchm" role="tabpanel">Settings</div>
+                    <div class="tab-pane fade" id="pitch3" role="tabpanel">Settings</div>
+                    <div class="tab-pane fade" id="pitch" role="tabpanel">Settings</div>
+                    <div class="tab-pane fade" id="overall" role="tabpanel">Settings</div>
+                </div>
+                <br />
+                <br />
+                <form>
+                    <input id="exitVelo" class="playerAtt" placeholder="Exit Velo" />
+                    <input id="infieldVelo" class="playerAtt" placeholder="Infield Velo" />
+                    <input id="outfieldVelo" class="playerAtt" placeholder="Outfield Velo"/>
+                    <input id="popTime" class="playerAtt" placeholder="Pop Time" />
+                    <input id="catcherVelo" class="playerAtt" placeholder="Catcher Velo" />
+                    <input id="fastballVelo" class="playerAtt" placeholder="Fastball Velo" />
+                    <input id="maxFastball" class="playerAtt" placeholder="Max Fastball Velo"/>
+                    <input id="sixtyyardVelo" class="playerAtt" placeholder="60-Yard Velo" />
+                    <input id="curveballVelo" class="playerAtt" placeholder="Curveball Velo" />
+                    <input id="changeupVelo" class="playerAtt" placeholder="Changeup Velo" />
+                    <input id="sliderVelo" class="playerAtt" placeholder="Slider Velo" />
+                    <input id="splitterVelo" class="playerAtt" placeholder="Splitter Velo" />
+                    <input id="cutterVelo" class="playerAtt" placeholder="Cutter Velo" />
+                    <input id="knuckleVelo" class="playerAtt" placeholder="Knuckle Velo" />
+                    <input id="forkVelo" class="playerAtt" placeholder="Fork Velo" />
+                </form>
+            </div>
+            <br />
+            <div class="col">
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Player
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Player #1</a>
+                        <a class="dropdown-item" href="#">Player #2</a>
+                        <a class="dropdown-item" href="#">Player #3</a>
+                    </div>
+                </div>
+                <br />
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yrlClNaWiGE" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+    <!--<script src="js/checkAuth.js"></script>-->
+</body>
+</html>
