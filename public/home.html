@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="GoScout" />
+      <title>GoScout</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css" />
+      <link rel="stylesheet" href="css/index.css" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <a class="navbar-brand" href="#"><img src="img/go-scout-logo.png" alt="GoScout Logo" /></a>
+        <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active px-2">
+              <a class="nav-link nav-link-ltr navLink" href="#">Home</a>
+            </li>
+            <li class="nav-item active px-2">
+              <a class="nav-link nav-link-ltr navLink" href="#">Contact</a>
+            </li>
+            <li class="nav-item active px-2">
+                <a class="nav-link nav-link-ltr navLink" href="#">Showcases</a>
+            </li>
+            <li class="nav-item active px-2">
+              <a class="nav-link nav-link-ltr navLink" href="#" onclick="signout()">Log Out</a>
+            </li>
+        </div>
+    </nav>
+    <main>
+      <div class="container-lg" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/home-bg.jpg'); background-position: center; 
+        background-repeat: no-repeat; background-size: cover; height: 65vh;">
+      </div>
+      <section>
+        <h2 class="text-dark text-center pt-5">About Us</h2>
+        <div class="hr bg-danger"></div>
+        <h6 class="text-center ml-5 mr-5">
+            At GoScout, we tie technology with the world of sports profiling and athletic recruitment, to make your career a whole lot easier. Recruiters, companies, and sports profilers often have jobs that demand tedious work. Putting together profiles, reports, and such can take an incredibly long time, eating up hours of the day, lowering your overall output. 
+            All of that makes it challenging to focus on the more personally rewarding aspects of their job, affecting happiness and productivity.
+            GoScout believes in working hard but also working smart. Through intelligently designed technology and a world-class team of innovative developers, we develop automation-focused solutions built for many facets of the sports industry.
+            Maybe, you have an idea to speed up tasks, create certain kinds of data, or want to improve a process, but don't know where to start. The GoScout team prides itself on being real-world problem-solvers, and with new quarterly products and innovations we are always on the cutting edge of what our customers need. Give us a chance, and we will give you hope and a new perspective.
+        </h6>
+      </section>
+    </main>
+    <br />
+    <br />
+    <section class="container-fluid" id="contact">
+      <h3 class="text-center">Contact Us</h3>
+      <div class="row">
+        <div class="col-md-6" data-aos="fade-up-right" data-aos-once="true">
+          <form>
+              <div class="form-group">
+                <label for="emailInput">Email address</label>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="Email Input" />
+                <small id="emailHelp" class="form-text text-muted">Your email will not be shared</small>
+              </div>
+              <div class="form-group">
+                <label for="nameInput">Name</label>
+                <input type="text" id="nameInput" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="messageInput">Message for us</label>
+                <textarea type="text" id="messageInput" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary"><i class="icono-locationArrow"></i> Submit</button>
+          </form>
+        </div>
+        <div class="col-md-2 offset-md-2" data-aos="fade-up-left" data-aos-once="true">
+          <br />
+          <a href="tel:2197819599"><i style="font-size: 64px; color: black;" class="icono-nexus"></i></a>
+          <br />
+          <br />
+          <a href="mailto:alexdelrio@prepbaseballreport.com"><i style="font-size: 64px; color: black;" class="icono-mail"></i></a>
+        </div>
+      </div>
+      <br />
+      <p class="text-center text-muted">Copyright (C) 2019 GoScout, LLC</p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/signOut.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
