@@ -38,7 +38,7 @@ signUpFrom.addEventListener('submit', (e) => {
       document.querySelector('#logout').style.display = 'flex'
       document.querySelector('#login').style.display = 'none'
       document.querySelector('#signup').style.display = 'none'
-      $('#sum').modal('hide');
+      $('#sum').modal('hide')
     })
   })
 })
@@ -79,6 +79,6 @@ loginForm.addEventListener('submit', (e) => {
     document.querySelector('#logout').style.display = 'flex'
     document.querySelector('#login').style.display = 'none'
     document.querySelector('#signup').style.display = 'none'
-    $('#lgm').modal('hide');
+    $('#lgm').modal('hide')
   })
 })
