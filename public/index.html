@@ -43,7 +43,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Login/Sign Up</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -52,13 +52,16 @@
             <form id="loginForm">
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Email:</label>
-                <input id="login-email" type="email" placeholder="Email MUST be at @probaseballreport.com" style="width: 100%;" />
+                <input id="login-email" type="email" placeholder="Email MUST be at @prepbaseballreport.com" style="width: 100%;" />
               </div>
               <div class="form-group">
                 <label for="message-text" class="col-form-label" >Password:</label>
                 <input id="login-password" type="password" placeholder="Password" style="width: 100%;" />
               </div>
-                <button type="submit" class="btn btn-outline btn-danger">Login</button>
+              <button type="submit" class="btn btn-outline btn-danger">Login</button>
+              <br />
+              <br />
+              <p class="text-danger" id="lgmError"></p>
             </form>
           </div>
         </div>
@@ -68,7 +71,7 @@
       <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Login/Sign Up</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -83,7 +86,15 @@
                   <label for="message-text" class="col-form-label" >Password:</label>
                   <input id="signup-password" type="password" placeholder="Password" style="width: 100%;" />
                 </div>
-                  <button type="submit" class="btn btn-outline btn-danger">Sign Up</button>
+                  <form action="#">
+                    <input type="checkbox" name="checkbox" value="check" id="agree" onclick="showButton()" /> I have read and agree to the Terms and Conditions.
+                    <br />
+                    <br />
+                    <input type="submit" id="loginSubmit" class="btn btn-danger noDisplay" name="submit" value="Login" />
+                    <br />
+                    <br />
+                    <p class="text-danger" id="sumError"></p>
+                  </form>
               </form>
             </div>
           </div>
@@ -147,6 +158,10 @@
     <script src="js/auth.js"></script>
     <script>
       AOS.init()
+      const showButton = () => {
+        var loginButton = document.getElementById('loginSubmit')
+        loginButton.classList.remove('noDisplay')
+      }
     </script>
   </body>
 </html>
