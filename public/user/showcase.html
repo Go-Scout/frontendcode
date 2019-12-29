@@ -6,226 +6,265 @@
     <meta name="description" content="GoScout" />
     <title>Showcases</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/showcase.css" />
     <link rel="icon" href="../img/logo.ico" />
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+        <a class="navbar-brand" href="#"><img src="../img/go-scout-logo.png" alt="GoScout Logo" /></a>
+        <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active px-2">
+              <a class="nav-link nav-link-ltr navLink" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item active px-2" id="logout">
+              <a class="nav-link nav-link-ltr navLink" href="#">Logout</a>
+            </li>
+        </div>
+    </nav>
     <br />
-    <br />
+    <div style="display: flex; justify-content: center;">
+        <button class="btn btn-outline-dark btn-sm download">Download Document</button>
+        <div class="dropdown">
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle pdownMenuButton2"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Past Showcases
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Showcase #1</a>
+                <a class="dropdown-item" href="#">Showcase #2</a>
+                <a class="dropdown-item" href="#">Showcase #3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-outline-dark btn-sm dropdown-toggle pdownMenuButton2"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Upcoming Showcases
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Showcase #1</a>
+                <a class="dropdown-item" href="#">Showcase #2</a>
+                <a class="dropdown-item" href="#">Showcase #3</a>
+            </div>
+        </div>
+    </div>
     <main class="container-fluid">
-        <div class="text-center mx-auto">
-            <button class="btn btn-outline-primary nload">Download Document</button>
-        </div>
-        <br />
-        <br />
-        <div class="col mx-auto text-center">
-            <button class="btn btn-outline-primary dData">
-                Load Data
-            </button>
-            <button class="btn btn-outline-primary eData">
-                Save Data
-            </button>
-            <button class="btn btn-outline-primary eratePlayer">
-                Add New Player
-            </button>
-            <button class="btn btn-outline-primary etePlayer">
-                Delete Player
-            </button>
-        </div>
-        <br />
-        <br />
         <div class="row">
-            <div class="col">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#body" role="tab">Body</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#hitting" role="tab">Hitting</a>
+            <div class="col-md-9 col-lg-6">
+                <div class="dropdown mr-2">
+                    <button class="btn btn-outline-dark dropdown-toggle btn-sm pdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Player
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Player #1</a>
+                        <a class="dropdown-item" href="#">Player #2</a>
+                        <a class="dropdown-item" href="#">Player #3</a>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs" role="tablist" style="font-size: 14px;">
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#body" role="tab">Body</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#hitting" role="tab">Hitting</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#fielding" role="tab">Fielding</a>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#hittingt" role="tab">Hitting 2</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#catcher" role="tab">Fielding
-                            (Catcher Only)</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#throwing" role="tab">Throwing</a>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#fielding" role="tab">Fielding</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitchingd" role="tab">Pitching
-                            Delivery</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitchm" role="tab">Pitching
-                            Mechanics</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitch3" role="tab">Pitch 3</a>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#catcher" role="tab">Catcher Setup</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#throwing" role="tab">Throwing</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#pitch" role="tab">Pitch</a></li>
-                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#overall" role="tab">Overall
-                            Actions</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#pitch" role="tab">Pitch</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#pitchd" role="tab">Pitch Delivery</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark tab"  
+                        data-toggle="tab" href="#pitchaction" role="tab">Pitch Actions</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark tab" 
+                        data-toggle="tab" href="#overall" role="tab">Overall Actions</a>
+                    </li>
                 </ul>
                 <br />
                 <div class="tab-content">
                     <div class="tab-pane fade" id="body" role="tabpanel">
                         <h6 class="section-label">Frame:</h6>
-                        <button class="btn btn-outline-success attBtn lean"
+                        <button class="btn btn-xs btn-outline-danger attBtn lean"
                             value="lean">Lean</button>
-                        <button class="btn btn-outline-success attBtn proportional"
+                        <button class="btn btn-xs btn-outline-danger attBtn proportional"
                             value="proportional">Proportional</button>
-                        <button class="btn btn-outline-success attBtn projectable"
+                        <button class="btn btn-xs btn-outline-danger attBtn projectable"
                             value="projectable">Projectable</button>
-                        <button class="btn btn-outline-success attBtn athletic"
+                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attBtn mature"
+                        <button class="btn btn-xs btn-outline-danger attBtn mature"
                             value="mature">Mature</button>
-                        <button class="btn btn-outline-success attBtn solid"
+                        <button class="btn btn-xs btn-outline-danger attBtn solid"
                             value="solid">Solid</button>
-                        <button class="btn btn-outline-success attBtn sturdy"
+                        <button class="btn btn-xs btn-outline-danger attBtn sturdy"
                             value="sturdy">Sturdy</button>
-                        <button class="btn btn-outline-success attBtn physical"
+                        <button class="btn btn-xs btn-outline-danger attBtn physical"
                             value="physical">Physical</button>
-                        <button class="btn btn-outline-success attBtn lanky"
+                        <button class="btn btn-xs btn-outline-danger attBtn lanky"
                             value="lanky">Lanky</button>
-                        <button class="btn btn-outline-success attBtn slim"
+                        <button class="btn btn-xs btn-outline-danger attBtn slim"
                             value="slim">Slim</button>
                     </div>
                     <div class="tab-pane fade" id="hitting" role="tabpanel">
                         <h6 class="section-label">Bat Speed:</h6>
-                        <button class="btn btn-outline-success attBtn electric"
+                        <button class="btn btn-xs btn-outline-danger attBtn electric"
                             value="electric">Electric</button>
-                        <button class="btn btn-outline-success attBtn raw"
+                        <button class="btn btn-xs btn-outline-danger attBtn raw"
                             value="raw">Raw</button>
-                        <button class="btn btn-outline-success attBtn dragging"
+                        <button class="btn btn-xs btn-outline-danger attBtn dragging"
                             value="dragging">Dragging</button>
-                        <button class="btn btn-outline-success attBtn lagging"
+                        <button class="btn btn-xs btn-outline-danger attBtn lagging"
                             value="lagging">Lagging</button>
-                        <button class="btn btn-outline-success attBtn explosive"
+                        <button class="btn btn-xs btn-outline-danger attBtn explosive"
                             value="explosive">Explosive</button>
-                        <button class="btn btn-outline-success attBtn quick"
+                        <button class="btn btn-xs btn-outline-danger attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-outline-success attBtn aboveaverage"
+                        <button class="btn btn-xs btn-outline-danger attBtn aboveaverage"
                             value="above average">Above Average</button>
-                        <button class="btn btn-outline-success attBtn average"
+                        <button class="btn btn-xs btn-outline-danger attBtn average"
                             value="average">Average</button>
-                        <button class="btn btn-outline-success attBtn belowaverage"
+                        <button class="btn btn-xs btn-outline-danger attBtn belowaverage"
                             value="below average">Below Average</button>
                         <br />
                         <br />
                         <h6 class="section-label">Swing Plane:</h6>
-                        <button class="btn btn-outline-success attBtn short"
+                        <button class="btn btn-xs btn-outline-danger attBtn short"
                             value="short">Short</button>
-                        <button class="btn btn-outline-success attBtn simple"
+                        <button class="btn btn-xs btn-outline-danger attBtn simple"
                             value="simple">Simple</button>
-                        <button class="btn btn-outline-success attBtn uphill"
+                        <button class="btn btn-xs btn-outline-danger attBtn uphill"
                             value="uphill">Uphill</button>
-                        <button class="btn btn-outline-success attBtn long"
+                        <button class="btn btn-xs btn-outline-danger attBtn long"
                             value="long">Long</button>
-                        <button class="btn btn-outline-success attBtn level"
+                        <button class="btn btn-xs btn-outline-danger attBtn level"
                             value="level">Level</button>
-                        <button class="btn btn-outline-success attBtn flat"
+                        <button class="btn btn-xs btn-outline-danger attBtn flat"
                             value="flat">Flat</button>
-                        <button class="btn btn-outline-success attBtn"
+                        <button class="btn btn-xs btn-outline-danger attBtn"
                             class="straight-to-the-ball" value="straight-to-the-ball">Straight-to-the-ball</button>
-                        <button class="btn btn-outline-success attBtn upward"
+                        <button class="btn btn-xs btn-outline-danger attBtn upward"
                             value="upward">Upward</button>
                         <br />
                         <br />
                         <h6 class="section-label">Finish:</h6>
-                        <button class="btn btn-outline-success attBtn high"
+                        <button class="btn btn-xs btn-outline-danger attBtn high"
                             value="high">High</button>
-                        <button class="btn btn-outline-success attBtn low"
+                        <button class="btn btn-xs btn-outline-danger attBtn low"
                             value="low">Low</button>
-                        <button class="btn btn-outline-success attBtn level#2"
+                        <button class="btn btn-xs btn-outline-danger attBtn level#2"
                             value="level">Level</button>
-                        <button class="btn btn-outline-success attBtn extension"
+                        <button class="btn btn-xs btn-outline-danger attBtn extension"
                             value="extension">Extension</button>
                         <br />
                         <br />
                         <h6 class="section-label">Approach:</h6>
-                        <button class="btn btn-outline-success attBtn pullside"
+                        <button class="btn btn-xs btn-outline-danger attBtn pullside"
                             value="pull side">Pull Side</button>
-                        <button class="btn btn-outline-success attBtn upthemiddle"
+                        <button class="btn btn-xs btn-outline-danger attBtn upthemiddle"
                             value="up the middle">Up the Middle</button>
-                        <button class="btn btn-outline-success attBtn oppositefield"
+                        <button class="btn btn-xs btn-outline-danger attBtn oppositefield"
                             value="opposite field">Opposite Field</button>
-                        <button class="btn btn-outline-success attBtn gaptogap"
+                        <button class="btn btn-xs btn-outline-danger attBtn gaptogap"
                             value="gap to gap">Gap to Gap</button>
-                        <button class="btn btn-outline-success attBtn linedrive"
+                        <button class="btn btn-xs btn-outline-danger attBtn linedrive"
                             value="line drive">Line Drive</button>
-                        <button class="btn btn-outline-success attBtn basehit"
+                        <button class="btn btn-xs btn-outline-danger attBtn basehit"
                             value="base hit">Base Hit</button>
-                        <br />
-                        <br />
+                    </div>
+                    <div class="tab-pane fade" id="hittingt" role="tabpanel">
                         <h6 class="section-label">Stride:</h6>
-                        <button class="btn btn-outline-success attBtn short"
+                        <button class="btn btn-xs btn-outline-danger attBtn short"
                             value="short">Short</button>
-                        <button class="btn btn-outline-success attBtn long"
+                        <button class="btn btn-xs btn-outline-danger attBtn long"
                             value="long">Long</button>
-                        <button class="btn btn-outline-success attBtn toetap"
+                        <button class="btn btn-xs btn-outline-danger attBtn toetap"
                             value="toe tap">Toe Tap</button>
-                        <button class="btn btn-outline-success attBtn biglegkick"
+                        <button class="btn btn-xs btn-outline-danger attBtn biglegkick"
                             value="big leg kick">Big Leg Kick</button>
-                        <button class="btn btn-outline-success attBtn legkick"
+                        <button class="btn btn-xs btn-outline-danger attBtn legkick"
                             value="leg kick">Leg Kick</button>
-                        <button class="btn btn-outline-success attBtn smalllegkick"
+                        <button class="btn btn-xs btn-outline-danger attBtn smalllegkick"
                             value="small leg kick">Small Leg Kick</button>
                         <br />
-                        <br />
                         <h6 class="section-label">Load:</h6>
-                        <button class="btn btn-outline-success attBtn smooth"
+                        <button class="btn btn-xs btn-outline-danger attBtn smooth"
                             value="smooth">Smooth</button>
-                        <button class="btn btn-outline-success attBtn quick"
+                        <button class="btn btn-xs btn-outline-danger attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-outline-success attBtn quiet"
+                        <button class="btn btn-xs btn-outline-danger attBtn quiet"
                             value="quiet">Quiet</button>
-                        <button class="btn btn-outline-success attBtn small"
+                        <button class="btn btn-xs btn-outline-danger attBtn small"
                             value="small">Small</button>
-                        <button class="btn btn-outline-success attBtn big"
+                        <button class="btn btn-xs btn-outline-danger attBtn big"
                             value="big">Big</button>
-                        <button class="btn btn-outline-success attBtn wrapping"
+                        <button class="btn btn-xs btn-outline-danger attBtn wrapping"
                             value="wrapping">Wrapping</button>
-                        <button class="btn btn-outline-success attBtn choppy"
+                        <button class="btn btn-xs btn-outline-danger attBtn choppy"
                             value="choppy">Choppy</button>
-                        <button class="btn btn-outline-success attBtn low"
+                        <button class="btn btn-xs btn-outline-danger attBtn low"
                             value="low">Low</button>
-                        <button class="btn btn-outline-success attBtn high"
+                        <button class="btn btn-xs btn-outline-danger attBtn high"
                             value="high">High</button>
                         <br />
                         <br />
                         <h6 class="section-label">Stance (Multiple):</h6>
-                        <button class="btn btn-outline-success attBtn balanced"
+                        <button class="btn btn-xs btn-outline-danger attBtn balanced"
                             value="balanced">Balanced</button>
-                        <button class="btn btn-outline-success attBtn strong"
+                        <button class="btn btn-xs btn-outline-danger attBtn strong"
                             value="strong">Strong</button>
-                        <button class="btn btn-outline-success attBtn athletic"
+                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attBtn crouched"
+                        <button class="btn btn-xs btn-outline-danger attBtn crouched"
                             value="crouched">Crouched</button>
-                        <button class="btn btn-outline-success attBtn closed"
+                        <button class="btn btn-xs btn-outline-danger attBtn closed"
                             value="closed">Closed</button>
-                        <button class="btn btn-outline-success attBtn open"
+                        <button class="btn btn-xs btn-outline-danger attBtn open"
                             value="open">Open</button>
-                        <button class="btn btn-outline-success attBtn wide"
+                        <button class="btn btn-xs btn-outline-danger attBtn wide"
                             value="wide">Wide</button>
-                        <button class="btn btn-outline-success attBtn tall"
+                        <button class="btn btn-xs btn-outline-danger attBtn tall"
                             value="tall">Tall</button>
                         <br />
                         <br />
                         <h6 class="section-label">Barrels:</h6>
-                        <button class="btn btn-outline-success attBtn multiple"
+                        <button class="btn btn-xs btn-outline-danger attBtn multiple"
                             value="multiple">Multiple</button>
-                        <button class="btn btn-outline-success attBtn some"
+                        <button class="btn btn-xs btn-outline-danger attBtn some"
                             value="some">Some</button>
-                        <button class="btn btn-outline-success attBtn lotsof"
+                        <button class="btn btn-xs btn-outline-danger attBtn lotsof"
                             value="lots of">Lots of</button>
-                        <button class="btn btn-outline-success attBtn alotof"
+                        <button class="btn btn-xs btn-outline-danger attBtn alotof"
                             value="a lot of">A Lot of</button>
-                        <button class="btn btn-outline-success attBtn afew"
+                        <button class="btn btn-xs btn-outline-danger attBtn afew"
                             value="a few">A Few</button>
-                        <button class="btn btn-outline-success attBtn acoupleof"
+                        <button class="btn btn-xs btn-outline-danger attBtn acoupleof"
                             value="a couple of">A Couple of</button>
                         <br />
                         <br />
                         <h6 class="section-label">Loud Contact:</h6>
-                        <button class="btn btn-outline-success attBtn some"
+                        <button class="btn btn-xs btn-outline-danger attBtn some"
                             value="some">Some</button>
-                        <button class="btn btn-outline-success attBtn alot"
+                        <button class="btn btn-xs btn-outline-danger attBtn alot"
                             value="a lot">A Lot</button>
-                        <button class="btn btn-outline-success attBtn loudcontact"
+                        <button class="btn btn-xs btn-outline-danger attBtn loudcontact"
                             value="loud contact">Loud Contact</button>
-                        <button class="btn btn-outline-success attBtn tonsof"
+                        <button class="btn btn-xs btn-outline-danger attBtn tonsof"
                             value="tons of">Tons of</button>
                     </div>
                     <div class="tab-pane fade" id="fielding" role="tabpanel">
@@ -238,228 +277,228 @@
                         <br />
                         <br />
                         <h6 class="section-label">Hands:</h6>
-                        <button class="btn btn-outline-success attBtn nextlevel"
+                        <button class="btn btn-xs btn-outline-danger attBtn nextlevel"
                             value="next level">Next Level</button>
-                        <button class="btn btn-outline-success attBtn twitchy"
+                        <button class="btn btn-xs btn-outline-danger attBtn twitchy"
                             value="twitchy">Twitchy</button>
-                        <button class="btn btn-outline-success attBtn firm"
+                        <button class="btn btn-xs btn-outline-danger attBtn firm"
                             value="firm">Firm</button>
-                        <button class="btn btn-outline-success attBtn sraw"
+                        <button class="btn btn-xs btn-outline-danger attBtn sraw"
                             value="raw">Raw</button>
-                        <button class="btn btn-outline-success attBtn hard"
+                        <button class="btn btn-xs btn-outline-danger attBtn hard"
                             value="hard">Hard</button>
-                        <button class="btn btn-outline-success attBtn soft"
+                        <button class="btn btn-xs btn-outline-danger attBtn soft"
                             value="soft">Soft</button>
-                        <button class="btn btn-outline-success attBtn sure"
+                        <button class="btn btn-xs btn-outline-danger attBtn sure"
                             value="sure">Sure</button>
-                        <button class="btn btn-outline-success attBtn consistent"
+                        <button class="btn btn-xs btn-outline-danger attBtn consistent"
                             value="consistent">Consistent</button>
-                        <button class="btn btn-outline-success attBtn inconsistent"
+                        <button class="btn btn-xs btn-outline-danger attBtn inconsistent"
                             value="inconsistent">Inconsistent</button>
                         <br />
                         <br />
                         <h6 class="section-label">Footwork:</h6>
-                        <button class="btn btn-outline-success attBtn athletic"
+                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attBtn smooth"
+                        <button class="btn btn-xs btn-outline-danger attBtn smooth"
                             value="smooth">Smooth</button>
-                        <button class="btn btn-outline-success attBtn quick"
+                        <button class="btn btn-xs btn-outline-danger attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-outline-success attBtn consistent"
+                        <button class="btn btn-xs btn-outline-danger attBtn consistent"
                             value="consistent">Consistent</button>
-                        <button class="btn btn-outline-success attBtn choppy"
+                        <button class="btn btn-xs btn-outline-danger attBtn choppy"
                             value="choppy">Choppy</button>
-                        <button class="btn btn-outline-success attBtn average"
+                        <button class="btn btn-xs btn-outline-danger attBtn average"
                             value="average">Average</button>
-                        <button class="btn btn-outline-success attBtn rhythmic"
+                        <button class="btn btn-xs btn-outline-danger attBtn rhythmic"
                             value="rhythmic">Rhythmic</button>
-                        <button class="btn btn-outline-success attBtn heavy"
+                        <button class="btn btn-xs btn-outline-danger attBtn heavy"
                             value="heavy">Heavy</button>
-                        <button class="btn btn-outline-success attBtn developing"
+                        <button class="btn btn-xs btn-outline-danger attBtn developing"
                             value="developing">Developing</button>
                         <br />
                         <br />
                         <h6 class="section-label">Fielding:</h6>
-                        <button class="btn btn-outline-success attBtn quick"
+                        <button class="btn btn-xs btn-outline-danger attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-outline-success attBtn twitchy"
+                        <button class="btn btn-xs btn-outline-danger attBtn twitchy"
                             value="twitchy">Twitchy</button>
-                        <button class="btn btn-outline-success attBtn clean"
+                        <button class="btn btn-xs btn-outline-danger attBtn clean"
                             value="clean">Clean</button>
-                        <button class="btn btn-outline-success attBtn fluid"
+                        <button class="btn btn-xs btn-outline-danger attBtn fluid"
                             value="fluid">Fluid</button>
-                        <button class="btn btn-outline-success attBtn natural"
+                        <button class="btn btn-xs btn-outline-danger attBtn natural"
                             value="natural">Natural</button>
-                        <button class="btn btn-outline-success attBtn lengthy"
+                        <button class="btn btn-xs btn-outline-danger attBtn lengthy"
                             value="lengthy">Lengthy</button>
-                        <button class="btn btn-outline-success attBtn developing"
+                        <button class="btn btn-xs btn-outline-danger attBtn developing"
                             value="developing">Developing</button>
                         <br />
                         <br />
                         <h6 class="section-label">Lateral Movement:</h6>
-                        <button class="btn btn-outline-success attBtn athletic"
+                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attBtn average"
+                        <button class="btn btn-xs btn-outline-danger attBtn average"
                             value="average">Average</button>
-                        <button class="btn btn-outline-success attBtn developing"
+                        <button class="btn btn-xs btn-outline-danger attBtn developing"
                             value="developing">Developing</button>
-                        <button class="btn btn-outline-success attBtn raw"
+                        <button class="btn btn-xs btn-outline-danger attBtn raw"
                             value="raw">Raw</button>
-                        <button class="btn btn-outline-success attBtn twitchy"
+                        <button class="btn btn-xs btn-outline-danger attBtn twitchy"
                             value="twitchy">Twitchy</button>
                         <br />
                         <br />
                         <h6 class="section-label">Fielding Ball:</h6>
-                        <button class="btn btn-outline-success attBtn outfront"
+                        <button class="btn btn-xs btn-outline-danger attBtn outfront"
                             value="out front">Out Front</button>
-                        <button class="btn btn-outline-success attBtn deep"
+                        <button class="btn btn-xs btn-outline-danger attBtn deep"
                             value="deep">Deep</button>
-                        <button class="btn btn-outline-success attBtn totheside"
+                        <button class="btn btn-xs btn-outline-danger attBtn totheside"
                             value="totheside">To the Side</button>
-                        <button class="btn btn-outline-success attBtn onehand"
+                        <button class="btn btn-xs btn-outline-danger attBtn onehand"
                             value="onehand">One Hand</button>
                     </div>
                     <div class="tab-pane fade" id="catcher" role="tabpanel">
                         <h6 class="section-label">Setup (Multiple):</h6>
-                        <button class="btn btn-outline-success attBtn athletic"
+                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attBtn low"
+                        <button class="btn btn-xs btn-outline-danger attBtn low"
                             value="low">Low</button>
-                        <button class="btn btn-outline-success attBtn tall"
+                        <button class="btn btn-xs btn-outline-danger attBtn tall"
                             value="tall">Tall</button>
-                        <button class="btn btn-outline-success attBtn narrow"
+                        <button class="btn btn-xs btn-outline-danger attBtn narrow"
                             value="narrow">Narrow</button>
-                        <button class="btn btn-outline-success attBtn wide"
+                        <button class="btn btn-xs btn-outline-danger attBtn wide"
                             value="wide">Wide</button>
-                        <button class="btn btn-outline-success attBtn flexible"
+                        <button class="btn btn-xs btn-outline-danger attBtn flexible"
                             value="flexible">Flexible</button>
                         <br />
                         <br />
                         <h6 class="section-label">Flexibility (Multiple):</h6>
-                        <button class="btn btn-outline-success attBtn some"
+                        <button class="btn btn-xs btn-outline-danger attBtn some"
                             value="some">Some</button>
-                        <button class="btn btn-outline-success attBtn tonsof"
+                        <button class="btn btn-xs btn-outline-danger attBtn tonsof"
                             value="tonsof">Tons of</button>
-                        <button class="btn btn-outline-success attBtn average"
+                        <button class="btn btn-xs btn-outline-danger attBtn average"
                             value="average">Average</button>
-                        <button class="btn btn-outline-success attBtn belowaverage"
+                        <button class="btn btn-xs btn-outline-danger attBtn belowaverage"
                             value="below average">Below Average</button>
-                        <button class="btn btn-outline-success attBtn aboveaverage"
+                        <button class="btn btn-xs btn-outline-danger attBtn aboveaverage"
                             value="above average">Above Average</button>
-                        <button class="btn btn-outline-success attBtn alotof"
+                        <button class="btn btn-xs btn-outline-danger attBtn alotof"
                             value="a lot of">A Lot of</button>
                     </div>
                     <div class="tab-pane fade" id="throwing" role="tabpanel">
                         <h6 class="section-label">Arm Action (Multiple):</h6>
-                        <button class="btn btn-outline-success attBtn long"
+                        <button class="btn btn-xs btn-outline-danger attBtn long"
                             value="long">Long</button>
-                        <button class="btn btn-outline-success attBtn short"
+                        <button class="btn btn-xs btn-outline-danger attBtn short"
                             value="short">Short</button>
-                        <button class="btn btn-outline-success attBtn quick"
+                        <button class="btn btn-xs btn-outline-danger attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-outline-success attBtn veryquick"
+                        <button class="btn btn-xs btn-outline-danger attBtn veryquick"
                             value="very quick">Very Quick</button>
-                        <button class="btn btn-outline-success attBtn slow"
+                        <button class="btn btn-xs btn-outline-danger attBtn slow"
                             value="slow">Slow</button>
-                        <button class="btn btn-outline-success attBtn loose"
+                        <button class="btn btn-xs btn-outline-danger attBtn loose"
                             value="loose">Loose</button>
-                        <button class="btn btn-outline-success attBtn stiff"
+                        <button class="btn btn-xs btn-outline-danger attBtn stiff"
                             value="stiff">Stiff</button>
-                        <button class="btn btn-outline-success attBtn consistent"
+                        <button class="btn btn-xs btn-outline-danger attBtn consistent"
                             value="consistent">Consistent</button>
-                        <button class="btn btn-outline-success attBtn compact"
+                        <button class="btn btn-xs btn-outline-danger attBtn compact"
                             value="compact">Compact</button>
                         <br />
                         <br />
                         <h6 class="section-label">Slot:</h6>
-                        <button class="btn btn-outline-success attBtn overthetop"
+                        <button class="btn btn-xs btn-outline-danger attBtn overthetop"
                             value="over-the-top">Over-the-top</button>
-                        <button class="btn btn-outline-success attBtn high3/4"
+                        <button class="btn btn-xs btn-outline-danger attBtn high3/4"
                             value="high 3/4">High 3/4</button>
-                        <button class="btn btn-outline-success attBtn 3/4"
+                        <button class="btn btn-xs btn-outline-danger attBtn 3/4"
                             value="3/4">3/4</button>
-                        <button class="btn btn-outline-success attBtn low3/4"
+                        <button class="btn btn-xs btn-outline-danger attBtn low3/4"
                             value="low 3/4">Low 3/4</button>
-                        <button class="btn btn-outline-success attBtn side"
+                        <button class="btn btn-xs btn-outline-danger attBtn side"
                             value="side">Side</button>
-                        <button class="btn btn-outline-success attBtn sub"
+                        <button class="btn btn-xs btn-outline-danger attBtn sub"
                             value="sub">Sub</button>
                     </div>
-                    <div class="tab-pane fade" id="pitchingd" role="tabpanel">
+                    <div class="tab-pane fade" id="pitch" role="tabpanel">
                         <h6>Pitching Delivery Type:</h6>
-                        <button class="btn btn-outline-success attBtn tallandfall" value="tall-and-fall">Tall-and-fall</button>
-                        <button class="btn btn-outline-success attBtn tiltandtopple" value="tilt-and-topple">Tilt-and-topple</button>
-                        <button class="btn btn-outline-success attBtn dropanddrive" value="drop-and-drive">Drop-and-drive</button>
-                        <button class="btn btn-outline-success attBtn feel" value="feel">Feel</button>
-                        <button class="btn btn-outline-success attBtn uptempo" value="up-tempo">Up-tempo</button>
-                        <button class="btn btn-outline-success attBtn slowtemp" value="slow-tempo">Slow-tempo</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn tallandfall" value="tall-and-fall">Tall-and-fall</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn tiltandtopple" value="tilt-and-topple">Tilt-and-topple</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn dropanddrive" value="drop-and-drive">Drop-and-drive</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn feel" value="feel">Feel</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn uptempo" value="up-tempo">Up-tempo</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn slowtemp" value="slow-tempo">Slow-tempo</button>
                         <br />
                         <br />
                         <h6>Pitching Delivery Effort:</h6>
-                        <button class="btn btn-outline-success attBtn easy" value="easy">Easy</button>
-                        <button class="btn btn-outline-success attBtn some" value="some">Some</button>
-                        <button class="btn btn-outline-success attBtn high" value="high">High</button>
-                        <button class="btn btn-outline-success attBtn max" value="max">Max</button>
-                    </div>
-                    <div class="tab-pane fade" id="pitchm" role="tabpanel">
+                        <button class="btn btn-xs btn-outline-danger attBtn easy" value="easy">Easy</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn some" value="some">Some</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn high" value="high">High</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn max" value="max">Max</button>
+                        <br />
+                        <br />
                         <h6>Arm Angle:</h6>
-                        <button class="btn btn-outline-success attnBtn overthetop" value="over-the-top">Over-the-top</button>
-                        <button class="btn btn-outline-success attnBtn high3/4" value="high 3/4">High 3/4</button>
-                        <button class="btn btn-outline-success attnBtn 3/4" value="3/4">3/4</button>
-                        <button class="btn btn-outline-success attnBtn low3/4" value="low 3/4">Low 3/4</button>
-                        <button class="btn btn-outline-success attnBtn side" value="side">Side</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn overthetop" value="over-the-top">Over-the-top</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn high3/4" value="high 3/4">High 3/4</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn 3/4" value="3/4">3/4</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn low3/4" value="low 3/4">Low 3/4</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn side" value="side">Side</button>
                         <br />
                         <br />
                         <h6>Arm Speed:</h6>
-                        <button class="btn btn-outline-success attnBtn lightning" value="lightning">Lightning</button>
-                        <button class="btn btn-outline-success attnBtn quick" value="quick">Quick</button>
-                        <button class="btn btn-outline-success attnBtn veryquick" value="very quick">Very Quick</button>
-                        <button class="btn btn-outline-success attnBtn aboveaverage" value="aboveaverage">Above Average</button>
-                        <button class="btn btn-outline-success attnBtn average" value="average">Average</button>
-                        <button class="btn btn-outline-success attnBtn belowaverage" value="below average">Below Average</button>
-                        <button class="btn btn-outline-success attnBtn consistent" value="consistent">Consistent</button>
-                        <button class="btn btn-outline-success attnBtn electric" value="electric">Electric</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn lightning" value="lightning">Lightning</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn quick" value="quick">Quick</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn veryquick" value="very quick">Very Quick</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="aboveaverage">Above Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn belowaverage" value="below average">Below Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn consistent" value="consistent">Consistent</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn electric" value="electric">Electric</button>
                         <br />
                         <br />
                         <h6>Arm Action:</h6>
-                        <button class="btn btn-outline-success attnBtn long" value="long">Long</button>
-                        <button class="btn btn-outline-success attnBtn short" value="short">Short</button>
-                        <button class="btn btn-outline-success attnBtn loose" value="loose">Loose</button>
-                        <button class="btn btn-outline-success attnBtn stiff" value="stiff">Stiff</button>
-                        <button class="btn btn-outline-success attnBtn consistent" value="consistent">Consistent</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn long" value="long">Long</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn short" value="short">Short</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn loose" value="loose">Loose</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn stiff" value="stiff">Stiff</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn consistent" value="consistent">Consistent</button>
                     </div>
-                    <div class="tab-pane fade" id="pitch3" role="tabpanel">
+                    <div class="tab-pane fade" id="pitchd" role="tabpanel">
                         <h6>Balance Point:</h6>
-                        <button class="btn btn-outline-success attBtn tall" value="tall">Tall</button>
-                        <button class="btn btn-outline-success attBtn low" value="low">Low</button>
-                        <button class="btn btn-outline-success attBtn anathletic" value="an athletic">An Athletic</button>
-                        <button class="btn btn-outline-success attBtn consistent" value="consistent">Consistent</button>
-                        <button class="btn btn-outline-success attBtn strong" value="strong">Strong</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn tall" value="tall">Tall</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn low" value="low">Low</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn anathletic" value="an athletic">An Athletic</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn consistent" value="consistent">Consistent</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn strong" value="strong">Strong</button>
                         <br />
                         <br />
                         <h6>Shoulder:</h6>
-                        <button class="btn btn-outline-success attBtn uphill" value="uphill">Uphill</button>
-                        <button class="btn btn-outline-success attBtn downhill" value="downhill">Downhill</button>
-                        <button class="btn btn-outline-success attBtn even" value="even">Even</button>
-                        <button class="btn btn-outline-success attBtn inline" value="inline">Inline</button>
-                        <button class="btn btn-outline-success attBtn fallingoff" value="falling off">Falling Off</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn uphill" value="uphill">Uphill</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn downhill" value="downhill">Downhill</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn even" value="even">Even</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn inline" value="inline">Inline</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn fallingoff" value="falling off">Falling Off</button>
                         <br />
                         <br />
                         <h6>Landing:</h6>
-                        <button class="btn btn-outline-success attBtn hard" value="hard">Hard</button>
-                        <button class="btn btn-outline-success attBtn soft" value="soft">Soft</button>
-                        <button class="btn btn-outline-success attBtn square" value="square">Square</button>
-                        <button class="btn btn-outline-success attBtn open" value="open">Open</button>
-                        <button class="btn btn-outline-success attBtn closed" value="closed">Closed</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn hard" value="hard">Hard</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn soft" value="soft">Soft</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn square" value="square">Square</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn open" value="open">Open</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn closed" value="closed">Closed</button>
                         <br />
                         <br />
                         <h6>Finish:</h6>
-                        <button class="btn btn-outline-success attBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attBtn recoil" value="recoil">Recoil</button>
-                        <button class="btn btn-outline-success attBtn anupright" value="an upright">An Upright</button>
-                        <button class="btn btn-outline-success attBtn fallingoff" value="falling off">Falling Off</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn recoil" value="recoil">Recoil</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn anupright" value="an upright">An Upright</button>
+                        <button class="btn btn-xs btn-outline-danger attBtn fallingoff" value="falling off">Falling Off</button>
                     </div>
-                    <div class="tab-pane fade" id="pitch" role="tabpanel">
+                    <div class="tab-pane fade" id="pitchaction" role="tabpanel">
                         <select class="custom-select" id="selectPitch">
                             <option selected>Pitch Type</option>
                             <option value="fastball" id="selectPitch1">Fastball</option>
@@ -474,49 +513,48 @@
                         <br />
                         <br />
                         <h6>Pitch Action:</h6>
-                        <button class="btn btn-outline-success attnBtn running" value="running">Running</button>
-                        <button class="btn btn-outline-success attnBtn cutting" value="cutting">Cutting</button>
-                        <button class="btn btn-outline-success attnBtn sinking" value="sinking">Sinking</button>
-                        <button class="btn btn-outline-success attnBtn tailing" value="tailing">Taling</button>
-                        <button class="btn btn-outline-success attnBtn sweeping" value="sweeping">Sweeping</button>
-                        <button class="btn btn-outline-success attnBtn gradual" value="gradual">Gradual</button>
-                        <button class="btn btn-outline-success attnBtn early" value="early">Early</button>
-                        <button class="btn btn-outline-success attnBtn fading" value="fading">Fading</button>
-                        <button class="btn btn-outline-success attnBtn swingandmiss" value="swing and miss">Swing and Miss</button>
-                        <button class="btn btn-outline-success attnBtn plus" value="plus">Plus</button>
-                        <button class="btn btn-outline-success attnBtn some" value="some">Some</button>
-                        <button class="btn btn-outline-success attnBtn lack of" value="lack of">Lack of</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn running" value="running">Running</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn cutting" value="cutting">Cutting</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn sinking" value="sinking">Sinking</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn tailing" value="tailing">Taling</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn sweeping" value="sweeping">Sweeping</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn gradual" value="gradual">Gradual</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn early" value="early">Early</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn fading" value="fading">Fading</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn swingandmiss" value="swing and miss">Swing and Miss</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn plus" value="plus">Plus</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn some" value="some">Some</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn lack of" value="lack of">Lack of</button>
                         <br />
                         <br />
                         <h6>Pitch Accuracy:</h6>
-                        <button class="btn btn-outline-success attnBtn veryconsistent" value="very consistent">Very Consistent</button>
-                        <button class="btn btn-outline-success attnBtn consistent" value="consistent">Consistent</button>
-                        <button class="btn btn-outline-success attnBtn decent" value="decent">Decent</button>
-                        <button class="btn btn-outline-success attnBtn some" value="some">Some</button>
-                        <button class="btn btn-outline-success attnBtn sporadic" value="sporadic">Sporadic</button>
-                        <button class="btn btn-outline-success attnBtn occasional" value="occasional">Occasional</button>
-                        <button class="btn btn-outline-success attnBtn lowinthezone" value="low in the zone">Low in the Zone</button>
-                        <button class="btn btn-outline-success attnBtn inthezone" value="in the zone">In the Zone</button>
-                        <button class="btn btn-outline-success attnBtn aroundthezone" value="around the zone">Around the Zone</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn veryconsistent" value="very consistent">Very Consistent</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn consistent" value="consistent">Consistent</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn decent" value="decent">Decent</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn some" value="some">Some</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn sporadic" value="sporadic">Sporadic</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn occasional" value="occasional">Occasional</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn lowinthezone" value="low in the zone">Low in the Zone</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn inthezone" value="in the zone">In the Zone</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn aroundthezone" value="around the zone">Around the Zone</button>
                         <br />
                         <br />
                         <h6>Pitching Movement:</h6>
-                        <button class="btn btn-outline-success attnBtn hard" value="hard">Hard</button>
-                        <button class="btn btn-outline-success attnBtn slight" value="slight">Slight</button>
-                        <button class="btn btn-outline-success attnBtn tight" value="tight">Tight</button>
-                        <button class="btn btn-outline-success attnBtn straight" value="straight">Straight</button>
-                        <button class="btn btn-outline-success attnBtn flat" value="flat">Flat</button>
-                        <button class="btn btn-outline-success attnBtn some" value="some">Some</button>
-                        <button class="btn btn-outline-success attnBtn heavy" value="heavy">Heavy</button>
-                        <button class="btn btn-outline-success attnBtn sharp" value="sharp">Sharp</button>
-                        <button class="btn btn-outline-success attnBtn 12/6" value="12/6">12/6</button>
-                        <button class="btn btn-outline-success attnBtn 11/5" value="11/5">11/5</button>
-                        <button class="btn btn-outline-success attnBtn 10/4" value="10/4">10/4</button>
-                        <button class="btn btn-outline-success attnBtn 1/7" value="1/7">1/7</button>
-                        <button class="btn btn-outline-success attnBtn 2/8" value="2/7">2/7</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn hard" value="hard">Hard</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn slight" value="slight">Slight</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn tight" value="tight">Tight</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn straight" value="straight">Straight</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn flat" value="flat">Flat</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn some" value="some">Some</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn heavy" value="heavy">Heavy</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn sharp" value="sharp">Sharp</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn 12/6" value="12/6">12/6</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn 11/5" value="11/5">11/5</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn 10/4" value="10/4">10/4</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn 1/7" value="1/7">1/7</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn 2/8" value="2/7">2/7</button>
                     </div>
                     <div class="tab-pane fade" id="overall" role="tabpanel">
-                        <h6>Fielding:</h6>
                         <select class="custom-select" id="selectOverall">
                             <option selected>Field Position</option>
                             <option value="infield" id="selectOverall1">Infield</option>
@@ -525,92 +563,75 @@
                         </select>
                         <br />
                         <br />
-                        <button class="btn btn-outline-success attnBtn smooth" value="smooth">Smooth</button>
-                        <button class="btn btn-outline-success attnBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attnBtn average" value="average">Average</button>
-                        <button class="btn btn-outline-success attnBtn aboveaverage" value="above average">Above Average</button>
-                        <button class="btn btn-outline-success attnBtn raw" value="raw">Raw</button>
-                        <button class="btn btn-outline-success attnBtn fluid" value="fluid">Fluid</button>
-                        <button class="btn btn-outline-success attnBtn projectable" value="projectable">Projectable</button>
-                        <button class="btn btn-outline-success attnBtn advanced" value="advanced">Advanced</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn smooth" value="smooth">Smooth</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="above average">Above Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn raw" value="raw">Raw</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn fluid" value="fluid">Fluid</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn projectable" value="projectable">Projectable</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn advanced" value="advanced">Advanced</button>
                         <br />
                         <br />
                         <h6>Pitching:</h6>
-                        <button class="btn btn-outline-success attnBtn smooth" value="smooth">Smooth</button>
-                        <button class="btn btn-outline-success attnBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attnBtn average" value="average">Average</button>
-                        <button class="btn btn-outline-success attnBtn aboveaverage" value="above average">Above Average</button>
-                        <button class="btn btn-outline-success attnBtn raw" value="raw">Raw</button>
-                        <button class="btn btn-outline-success attnBtn fluid" value="fluid">Fluid</button>
-                        <button class="btn btn-outline-success attnBtn projectable" value="projectable">Projectable</button>
-                        <button class="btn btn-outline-success attnBtn advanced" value="advanced">Advanced</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn smooth" value="smooth">Smooth</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="above average">Above Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn raw" value="raw">Raw</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn fluid" value="fluid">Fluid</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn projectable" value="projectable">Projectable</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn advanced" value="advanced">Advanced</button>
                         <br />
                         <br />
                         <h6>Hitting:</h6>
-                        <button class="btn btn-outline-success attnBtn smooth" value="smooth">Smooth</button>
-                        <button class="btn btn-outline-success attnBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-outline-success attnBtn average" value="average">Average</button>
-                        <button class="btn btn-outline-success attnBtn aboveaverage" value="above average">Above Average</button>
-                        <button class="btn btn-outline-success attnBtn raw" value="raw">Raw</button>
-                        <button class="btn btn-outline-success attnBtn fluid" value="fluid">Fluid</button>
-                        <button class="btn btn-outline-success attnBtn projectable" value="projectable">Projectable</button>
-                        <button class="btn btn-outline-success attnBtn advanced" value="advanced">Advanced</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn smooth" value="smooth">Smooth</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="above average">Above Average</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn raw" value="raw">Raw</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn fluid" value="fluid">Fluid</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn projectable" value="projectable">Projectable</button>
+                        <button class="btn btn-xs btn-outline-danger attnBtn advanced" value="advanced">Advanced</button>
                     </div>
                 </div>
                 <br />
-                <br />
-                <form>
+                <div> 
                     <input id="exitVelo" class="playerAtt" placeholder="Exit Velo" />
-                    <input id="infieldVelo" class="playerAtt" placeholder="Infield Velo" />
-                    <input id="outfieldVelo" class="playerAtt" placeholder="Outfield Velo" />
-                    <input id="popTime" class="playerAtt" placeholder="Pop Time" />
-                    <input id="catcherVelo" class="playerAtt" placeholder="Catcher Velo" />
-                    <input id="fastballVelo" class="playerAtt" placeholder="Fastball Velo" />
-                    <input id="maxFastball" class="playerAtt" placeholder="Max Fastball Velo" />
-                    <input id="sixtyyardVelo" class="playerAtt" placeholder="60-Yard Velo" />
-                    <input id="curveballVelo" class="playerAtt" placeholder="Curveball Velo" />
-                    <input id="changeupVelo" class="playerAtt" placeholder="Changeup Velo" />
-                    <input id="sliderVelo" class="playerAtt" placeholder="Slider Velo" />
-                    <input id="splitterVelo" class="playerAtt" placeholder="Splitter Velo" />
-                    <input id="cutterVelo" class="playerAtt" placeholder="Cutter Velo" />
-                    <input id="knuckleVelo" class="playerAtt" placeholder="Knuckle Velo" />
-                    <input id="forkVelo" class="playerAtt" placeholder="Fork Velo" />
-                </form>
+                    <input id="infieldVelo" class="playerAtt my-1" placeholder="Infield Velo" />
+                    <input id="outfieldVelo" class="playerAtt my-1" placeholder="Outfield Velo" />
+                    <input id="popTime" class="playerAtt my-1" placeholder="Pop Time" />
+                    <input id="catcherVelo" class="playerAtt my-1" placeholder="Catcher Velo" />
+                    <input id="fastballVelo" class="playerAtt my-1" placeholder="Fastball Velo" />
+                    <input id="maxFastball" class="playerAtt my-1" placeholder="Max Fastball Velo" />
+                    <input id="sixtyyardVelo" class="playerAtt my-1" placeholder="60-Yard Velo" />
+                    <input id="curveballVelo" class="playerAtt my-1" placeholder="Curveball Velo" />
+                    <input id="changeupVelo" class="playerAtt my-1" placeholder="Changeup Velo" />
+                    <input id="sliderVelo" class="playerAtt my-1" placeholder="Slider Velo" />
+                    <input id="splitterVelo" class="playerAtt my-1" placeholder="Splitter Velo" />
+                    <input id="cutterVelo" class="playerAtt my-1" placeholder="Cutter Velo" />
+                    <input id="knuckleVelo" class="playerAtt my-1" placeholder="Knuckle Velo" />
+                    <input id="forkVelo" class="playerAtt my-1" placeholder="Fork Velo" />
+                </div>
             </div>
             <br />
-            <div class="col">
-                <div class="dropdown">
-                    <button class="btn btn-outline-primary dropdown-toggle pdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select Player
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Player #1</a>
-                        <a class="dropdown-item" href="#">Player #2</a>
-                        <a class="dropdown-item" href="#">Player #3</a>
-                    </div>
-                </div>
-                <br />
-                <div class="dropdown">
-                    <button class="btn btn-outline-primary dropdown-toggle pdownMenuButton2"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Showcase List
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Showcase #1</a>
-                        <a class="dropdown-item" href="#">Showcase #2</a>
-                        <a class="dropdown-item" href="#">Showcase #3</a>
-                    </div>
-                </div>
-                <br />
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yrlClNaWiGE"
+            <div class="col-md-3 col-lg-6 mt-2">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1fAGC0yJCwU"
                         allowfullscreen></iframe>
                 </div>
+                <br />
+                <label for="playerParagraph">Player Paragraph:</label>
+                <br />
+                <textarea id="playerParagraph" class="embed-responsive embed-responsive-21by9">
+
+                </textarea>
+                <br />
+                <br />
             </div>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -622,6 +643,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
     <script src="js/submit.js"></script>
-    <script src="js/checkAuth.js"></script>
+    <!--<script src="js/checkAuth.js"></script>-->
 </body>
 </html>

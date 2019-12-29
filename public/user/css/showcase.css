@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+button {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 8px;
+}
+.btn-group-xs > .btn, .btn-xs {
+    padding: .35rem .4rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
+}
+.btn {
+    border-radius: 20px;
+}
+.navLink {
+    font-size: 1.5rem;
+    position: relative;
+}
+.nav-link:hover {
+    opacity: 1;
+}
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: white;
+}
+.nav-link-ltr::before {
+
+    width: 0%;
+    bottom: 10px;
+} 
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+.tab:hover {
+    background-color: gray;
+    color: white;
+}

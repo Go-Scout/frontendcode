@@ -18,3 +18,12 @@ firebase.auth().onAuthStateChanged(function(user) {
         window.location = "https://go-scout.web.app/index"
     }
 })
+//logout 
+const logout = document.querySelector('#logout')
+logout.addEventListener('click', (e) => {
+  e.preventDefault()
+  auth.signOut().then(() => {
+    console.log("User Logged Out")
+})
+    location.assign('https://go-scout.web.app')
+})
