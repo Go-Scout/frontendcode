@@ -4,15 +4,16 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name="description" content="GoScout" />
+      <meta name="theme-color" content="#0082c8">
       <title>GoScout</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/open-iconic/font/css/open-iconic-bootstrap.min.css" />
       <link rel="stylesheet" href="css/index.css" />
       <link rel="icon" href="img/logo.ico" />
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#"><img src="img/go-scout-logo.png" alt="GoScout Logo" /></a>
         <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -20,26 +21,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active px-2">
-              <a class="nav-link nav-link-ltr navLink" href="#">Home</a>
+              <a class="nav-link nav-link-ltr navLink pb-3" href="#">Home</a>
             </li>
             <li class="nav-item active px-2">
-              <a class="nav-link nav-link-ltr navLink" href="#contact">Contact</a>
+              <a class="nav-link nav-link-ltr navLink pb-3" href="#contact">Contact</a>
             </li>
             <li class="nav-item active px-2" style="display: none;" id="showcase">
-                <a class="nav-link nav-link-ltr navLink" href="user/showcase.html">Showcases</a>
+                <a class="nav-link nav-link-ltr navLink pb-3" href="user/showcase.html">Showcases</a>
             </li>
             <li class="nav-item active px-2" id="login" data-toggle="modal" data-target="#lgm">
-                <a class="nav-link nav-link-ltr navLink" href="#">Login</a>
+                <a class="nav-link nav-link-ltr navLink pb-3" href="#">Login</a>
             </li>
             <li class="nav-item active px-2" id="signup" data-toggle="modal" data-target="#sum">
-                <a class="nav-link nav-link-ltr navLink" href="#">Sign Up</a>
+                <a class="nav-link nav-link-ltr navLink pb-3" href="#">Sign Up</a>
             </li>
             <li class="nav-item active px-2" style="display: none;" id="logout">
-              <a class="nav-link nav-link-ltr navLink" href="#">Logout</a>
+              <a class="nav-link nav-link-ltr navLink pb-3" href="#">Logout</a>
             </li>
         </div>
     </nav>
-    <div class="modal fade" id="lgm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" style="overflow-x: hidden;" id="lgm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -67,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="sum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" style="overflow-x: hidden;" id="sum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -92,7 +93,6 @@
                     <br />
                     <input type="submit" id="loginSubmit" class="btn btn-danger noDisplay" name="submit" value="Login" />
                     <br />
-                    <br />
                     <p class="text-danger" id="sumError"></p>
                   </form>
               </form>
@@ -101,11 +101,11 @@
       </div>
     </div>
     <main>
-      <div class="container-lg" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/home-bg.jpg'); background-position: center; 
+      <div class="container-fluid" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/home-bg.jpg'); background-position: center; 
         background-repeat: no-repeat; background-size: cover; height: 65vh;">
       </div>
       <section>
-        <h2 class="text-dark text-center pt-5">About Us</h2>
+        <h2 class="text-dark text-center pt-5 textGrad">About Us</h2>
         <div class="hr bg-danger"></div>
         <h6 class="text-center ml-5 mr-5">
             At GoScout, we tie technology with the world of sports profiling and athletic recruitment, to make your career a whole lot easier. Recruiters, companies, and sports profilers often have jobs that demand tedious work. Putting together profiles, reports, and such can take an incredibly long time, eating up hours of the day, lowering your overall output. 
@@ -117,14 +117,14 @@
     </main>
     <br />
     <br />
-    <section class="container-fluid" id="contact">
-      <h3 class="text-center">Contact Us</h3>
+    <section class="container-fluid" style="overflow-x: hidden;" id="contactSection">
+      <h3 class="text-center textGrad">Contact Us</h3>
       <div class="row">
         <div class="col-md-6" data-aos="fade-up-right" data-aos-once="true">
           <form id="contact">
               <div class="form-group">
                 <label for="emailInput">Email address</label>
-                <input type="email" class="form-control" id="emailInput" aria-describedby="Email Input" />
+                <input type="email" class="form-control" id="emailInput" aria-label="Email Contact Form" aria-describedby="Email Contact Form" />
                 <small id="emailHelp" class="form-text text-muted">Your email will not be shared</small>
               </div>
               <div class="form-group">
@@ -135,33 +135,35 @@
                 <label for="messageInput">Message for us</label>
                 <textarea type="text" id="messageInput" class="form-control"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary"><i class="icono-locationArrow"></i> Submit</button>
+              <button type="submit" class="btn" id="sendBtn">
+                <span class="oi oi-location" title="Send Icon" aria-label="Send Icon"></span> Submit
+              </button>
           </form>
         </div>
         <div class="col-md-2 offset-md-2" data-aos="fade-up-left" data-aos-once="true">
           <br />
-          <a href="tel:2197819599"><i style="font-size: 64px; color: black;" class="icono-nexus"></i></a>
+          <a href="tel:2197819599">
+            <span class="oi oi-phone" style="color: black; font-size: 24px;" title="Phone Icon" aria-label="Phone Icon"></span>
+          </a>
           <br />
           <br />
-          <a href="mailto:alexdelrio@prepbaseballreport.com"><i style="font-size: 64px; color: black;" class="icono-mail"></i></a>
+          <a href="mailto:alexdelrio@prepbaseballreport.com">
+            <span class="oi oi-envelope-closed" style="color: black; font-size: 24px;" title="Mail Icon" aria-label="Mail Icon"></span>
+          </a>
+          <br />
+          <img src="img/homerun.svg" width="200px" height="200px" alt="Logo" />
         </div>
       </div>
       <br />
       <p class="text-center text-muted">Copyright (C) 2019 GoScout, LLC</p>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
     <script src="js/auth.js"></script>
-    <script>
-      AOS.init()
-      const showButton = () => {
-        var loginButton = document.getElementById('loginSubmit')
-        loginButton.classList.remove('noDisplay')
-      }
-    </script>
   </body>
 </html>

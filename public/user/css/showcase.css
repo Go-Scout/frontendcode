@@ -1,4 +1,6 @@
+@import url("../css/--secondary-gradient");
 * { box-sizing: border-box; }
+/* Default Stylings */
 html, body {
     width: 100%;
     overflow-x: hidden;
@@ -7,39 +9,37 @@ button {
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 8px;
+    background: #0082c8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+input:hover, input:active, input:focus {
+    border-color: #6610f2;
+    transition: ease-in 1.2s;
+    border-width: 1.5px;
+}
+/* Classes */
 .btn-group-xs > .btn, .btn-xs {
-    padding: .35rem .4rem;
+    padding: .40rem .4rem;
     font-size: .875rem;
     line-height: .5;
     border-radius: .2rem;
+}
+.btn-xs:hover, .btn-xs:active, .btn-xs:focus {
+    transform: scale(1.1);
+    margin: 5px;
 }
 .btn {
     border-radius: 20px;
 }
 .navLink {
-    font-size: 1.5rem;
-    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.nav-link:hover {
-    opacity: 1;
-}
-.nav-link::before {
-    transition: 300ms;
-    height: 2px;
-    content: "";
-    position: absolute;
-    background-color: white;
-}
-.nav-link-ltr::before {
-
-    width: 0%;
-    bottom: 10px;
-} 
-.nav-link-ltr:hover::before {
-    width: 100%;
-}
-.tab:hover {
+.tab:hover, .tab:active, .tab:focus {
     background-color: gray;
     color: white;
 }
+.playerAtt {
+    width: 8.125em;
+}
+/* IDs */
+/* Media Queries */

@@ -4,67 +4,104 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="GoScout" />
+    <meta name="theme-color" content="#0082c8">
     <title>Showcases</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/open-iconic/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="css/showcase.css" />
     <link rel="icon" href="../img/logo.ico" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black;">
+    <nav class="navbar navbar-expand-lg navbar-dark mb-2">
         <a class="navbar-brand" href="#"><img src="../img/go-scout-logo.png" alt="GoScout Logo" /></a>
-        <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" style="border: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active px-2">
-              <a class="nav-link nav-link-ltr navLink" href="../index.html">Home</a>
+              <a class="nav-link nav-link-ltr navLink pb-3" href="../index.html">Home</a>
             </li>
             <li class="nav-item active px-2" id="logout">
-              <a class="nav-link nav-link-ltr navLink" href="#">Logout</a>
+              <a class="nav-link nav-link-ltr navLink pb-3" href="#">Logout</a>
             </li>
         </div>
     </nav>
-    <br />
-    <div style="display: flex; justify-content: center;">
-        <button class="btn btn-outline-dark btn-sm download">Download Document</button>
-        <div class="dropdown">
-            <button class="btn btn-outline-dark btn-sm dropdown-toggle pdownMenuButton2"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Past Showcases
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Showcase #1</a>
-                <a class="dropdown-item" href="#">Showcase #2</a>
-                <a class="dropdown-item" href="#">Showcase #3</a>
+    <div id="buttonsMobile" class="d-block d-md-none text-center mb-2">
+        <button class="btn btn-primary btn-sm download mb-1">
+            Download Document
+            <span class="oi oi-data-transfer-download" 
+                style="color: white; font-size: 0.8rem;" title="Download Icon" aria-label="Download Icon"></span>
+        </button>
+        <div style="display: flex; justify-content: center;">
+            <div class="dropdown mr-1">
+                <button class="btn btn-outline-primary btn-sm dropdown-toggle pdownMenuButton2"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Past Showcases
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Showcase #1</a>
+                    <a class="dropdown-item" href="#">Showcase #2</a>
+                    <a class="dropdown-item" href="#">Showcase #3</a>
+                </div>
             </div>
-        </div>
-        <div class="dropdown">
-            <button class="btn btn-outline-dark btn-sm dropdown-toggle pdownMenuButton2"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Upcoming Showcases
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Showcase #1</a>
-                <a class="dropdown-item" href="#">Showcase #2</a>
-                <a class="dropdown-item" href="#">Showcase #3</a>
+            <div class="dropdown">
+                <button class="btn btn-outline-primary btn-sm dropdown-toggle pdownMenuButton2"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Upcoming Showcases
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Showcase #1</a>
+                    <a class="dropdown-item" href="#">Showcase #2</a>
+                    <a class="dropdown-item" href="#">Showcase #3</a>
+                </div>
             </div>
         </div>
     </div>
     <main class="container-fluid">
         <div class="row">
             <div class="col-md-9 col-lg-6">
-                <div class="dropdown mr-2">
-                    <button class="btn btn-outline-dark dropdown-toggle btn-sm pdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select Player
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Player #1</a>
-                        <a class="dropdown-item" href="#">Player #2</a>
-                        <a class="dropdown-item" href="#">Player #3</a>
+                <div id="buttonsDesktop" class="d-inline-flex mb-1">
+                    <div class="dropdown mr-2">
+                        <button class="btn btn-outline-primary dropdown-toggle btn-sm pdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Select Player
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Player #1</a>
+                            <a class="dropdown-item" href="#">Player #2</a>
+                            <a class="dropdown-item" href="#">Player #3</a>
+                        </div>
                     </div>
+                    <div class="dropdown mr-2 d-none d-md-inline-flex">
+                        <button class="btn btn-outline-primary btn-sm dropdown-toggle pdownMenuButton2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Past Showcases
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Showcase #1</a>
+                            <a class="dropdown-item" href="#">Showcase #2</a>
+                            <a class="dropdown-item" href="#">Showcase #3</a>
+                        </div>
+                    </div>
+                    <div class="dropdown mr-2 d-none d-md-inline-flex">
+                        <button class="btn btn-outline-primary btn-sm dropdown-toggle pdownMenuButton2"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Upcoming Showcases
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Showcase #1</a>
+                            <a class="dropdown-item" href="#">Showcase #2</a>
+                            <a class="dropdown-item" href="#">Showcase #3</a>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-sm download d-none d-md-inline-block">Download Document 
+                        <span class="oi oi-data-transfer-download" 
+                            style="color: white; font-size: 0.8rem;" title="Download Icon" aria-label="Download Icon"></span>
+                    </button>
                 </div>
                 <ul class="nav nav-tabs" role="tablist" style="font-size: 14px;">
                     <li class="nav-item"><a class="nav-link text-dark tab"  
@@ -79,9 +116,7 @@
                         data-toggle="tab" href="#fielding" role="tab">Fielding</a>
                     </li>
                     <li class="nav-item"><a class="nav-link text-dark tab"  
-                        data-toggle="tab" href="#catcher" role="tab">Catcher Setup</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark tab"  
-                        data-toggle="tab" href="#throwing" role="tab">Throwing</a>
+                        data-toggle="tab" href="#fielding2" role="tab">Fielding 2</a>
                     </li>
                     <li class="nav-item"><a class="nav-link text-dark tab"  
                         data-toggle="tab" href="#pitch" role="tab">Pitch</a>
@@ -92,184 +127,193 @@
                     <li class="nav-item"><a class="nav-link text-dark tab"  
                         data-toggle="tab" href="#pitchaction" role="tab">Pitch Actions</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-dark tab" 
-                        data-toggle="tab" href="#overall" role="tab">Overall Actions</a>
-                    </li>
                 </ul>
                 <br />
                 <div class="tab-content">
                     <div class="tab-pane fade" id="body" role="tabpanel">
                         <h6 class="section-label">Frame:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn lean"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn lean"
                             value="lean">Lean</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn proportional"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn proportional"
                             value="proportional">Proportional</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn projectable"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn projectable"
                             value="projectable">Projectable</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn mature"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn mature"
                             value="mature">Mature</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn solid"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn solid"
                             value="solid">Solid</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn sturdy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn sturdy"
                             value="sturdy">Sturdy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn physical"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn physical"
                             value="physical">Physical</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn lanky"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn lanky"
                             value="lanky">Lanky</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn slim"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn slim"
                             value="slim">Slim</button>
                     </div>
                     <div class="tab-pane fade" id="hitting" role="tabpanel">
                         <h6 class="section-label">Bat Speed:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn electric"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn electric"
                             value="electric">Electric</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn raw"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn raw"
                             value="raw">Raw</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn dragging"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn dragging"
                             value="dragging">Dragging</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn lagging"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn lagging"
                             value="lagging">Lagging</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn explosive"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn explosive"
                             value="explosive">Explosive</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn quick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn aboveaverage"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn aboveaverage"
                             value="above average">Above Average</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn average"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn average"
                             value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn belowaverage"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn belowaverage"
                             value="below average">Below Average</button>
                         <br />
                         <br />
                         <h6 class="section-label">Swing Plane:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn short"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn short"
                             value="short">Short</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn simple"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn simple"
                             value="simple">Simple</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn uphill"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn uphill"
                             value="uphill">Uphill</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn long"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn long"
                             value="long">Long</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn level"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn level"
                             value="level">Level</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn flat"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn flat"
                             value="flat">Flat</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn"
                             class="straight-to-the-ball" value="straight-to-the-ball">Straight-to-the-ball</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn upward"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn upward"
                             value="upward">Upward</button>
                         <br />
                         <br />
                         <h6 class="section-label">Finish:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn high"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn high"
                             value="high">High</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn low"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn low"
                             value="low">Low</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn level#2"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn level#2"
                             value="level">Level</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn extension"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn extension"
                             value="extension">Extension</button>
                         <br />
                         <br />
                         <h6 class="section-label">Approach:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn pullside"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn pullside"
                             value="pull side">Pull Side</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn upthemiddle"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn upthemiddle"
                             value="up the middle">Up the Middle</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn oppositefield"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn oppositefield"
                             value="opposite field">Opposite Field</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn gaptogap"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn gaptogap"
                             value="gap to gap">Gap to Gap</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn linedrive"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn linedrive"
                             value="line drive">Line Drive</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn basehit"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn basehit"
                             value="base hit">Base Hit</button>
                     </div>
                     <div class="tab-pane fade" id="hittingt" role="tabpanel">
                         <h6 class="section-label">Stride:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn short"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn short"
                             value="short">Short</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn long"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn long"
                             value="long">Long</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn toetap"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn toetap"
                             value="toe tap">Toe Tap</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn biglegkick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn biglegkick"
                             value="big leg kick">Big Leg Kick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn legkick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn legkick"
                             value="leg kick">Leg Kick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn smalllegkick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn smalllegkick"
                             value="small leg kick">Small Leg Kick</button>
                         <br />
+                        <br />
                         <h6 class="section-label">Load:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn smooth"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn smooth"
                             value="smooth">Smooth</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn quick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn quiet"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn quiet"
                             value="quiet">Quiet</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn small"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn small"
                             value="small">Small</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn big"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn big"
                             value="big">Big</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn wrapping"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn wrapping"
                             value="wrapping">Wrapping</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn choppy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn choppy"
                             value="choppy">Choppy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn low"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn low"
                             value="low">Low</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn high"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn high"
                             value="high">High</button>
                         <br />
                         <br />
                         <h6 class="section-label">Stance (Multiple):</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn balanced"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn balanced"
                             value="balanced">Balanced</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn strong"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn strong"
                             value="strong">Strong</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn crouched"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn crouched"
                             value="crouched">Crouched</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn closed"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn closed"
                             value="closed">Closed</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn open"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn open"
                             value="open">Open</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn wide"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn wide"
                             value="wide">Wide</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn tall"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn tall"
                             value="tall">Tall</button>
                         <br />
                         <br />
                         <h6 class="section-label">Barrels:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn multiple"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn multiple"
                             value="multiple">Multiple</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn some"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn some"
                             value="some">Some</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn lotsof"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn lotsof"
                             value="lots of">Lots of</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn alotof"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn alotof"
                             value="a lot of">A Lot of</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn afew"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn afew"
                             value="a few">A Few</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn acoupleof"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn acoupleof"
                             value="a couple of">A Couple of</button>
                         <br />
                         <br />
                         <h6 class="section-label">Loud Contact:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn some"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn some"
                             value="some">Some</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn alot"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn alot"
                             value="a lot">A Lot</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn loudcontact"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn loudcontact"
                             value="loud contact">Loud Contact</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn tonsof"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn tonsof"
                             value="tons of">Tons of</button>
+                        <br />
+                        <br />
+                        <h6>Overall Actions:</h6>
+                        <button class="btn btn-xs btn-outline-primary attnBtn smooth" value="smooth">Smooth</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn aboveaverage" value="above average">Above Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn raw" value="raw">Raw</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn fluid" value="fluid">Fluid</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn projectable" value="projectable">Projectable</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn advanced" value="advanced">Advanced</button>
                     </div>
                     <div class="tab-pane fade" id="fielding" role="tabpanel">
                         <select class="custom-select" id="selectFielding">
-                            <option selected>Field Position</option>
+                            <option selected>Select Position</option>
                             <option value="infield" id="selectFielding1">Infield</option>
                             <option value="outfield"id="selectFielding2">Outfield</option>
                             <option value="catcher" id="selectFielding3">Catcher</option>
@@ -277,230 +321,267 @@
                         <br />
                         <br />
                         <h6 class="section-label">Hands:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn nextlevel"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn nextlevel"
                             value="next level">Next Level</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn twitchy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn twitchy"
                             value="twitchy">Twitchy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn firm"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn firm"
                             value="firm">Firm</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn sraw"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn sraw"
                             value="raw">Raw</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn hard"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn hard"
                             value="hard">Hard</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn soft"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn soft"
                             value="soft">Soft</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn sure"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn sure"
                             value="sure">Sure</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn consistent"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn consistent"
                             value="consistent">Consistent</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn inconsistent"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn inconsistent"
                             value="inconsistent">Inconsistent</button>
                         <br />
                         <br />
                         <h6 class="section-label">Footwork:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn smooth"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn smooth"
                             value="smooth">Smooth</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn quick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn consistent"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn consistent"
                             value="consistent">Consistent</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn choppy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn choppy"
                             value="choppy">Choppy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn average"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn average"
                             value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn rhythmic"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn rhythmic"
                             value="rhythmic">Rhythmic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn heavy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn heavy"
                             value="heavy">Heavy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn developing"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn developing"
                             value="developing">Developing</button>
                         <br />
                         <br />
                         <h6 class="section-label">Fielding:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn quick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn twitchy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn twitchy"
                             value="twitchy">Twitchy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn clean"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn clean"
                             value="clean">Clean</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn fluid"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn fluid"
                             value="fluid">Fluid</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn natural"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn natural"
                             value="natural">Natural</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn lengthy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn lengthy"
                             value="lengthy">Lengthy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn developing"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn developing"
                             value="developing">Developing</button>
                         <br />
                         <br />
                         <h6 class="section-label">Lateral Movement:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn athletic"
                             value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn average"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn average"
                             value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn developing"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn developing"
                             value="developing">Developing</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn raw"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn raw"
                             value="raw">Raw</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn twitchy"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn twitchy"
                             value="twitchy">Twitchy</button>
                         <br />
                         <br />
                         <h6 class="section-label">Fielding Ball:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn outfront"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn outfront"
                             value="out front">Out Front</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn deep"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn deep"
                             value="deep">Deep</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn totheside"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn totheside"
                             value="totheside">To the Side</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn onehand"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn onehand"
                             value="onehand">One Hand</button>
                     </div>
-                    <div class="tab-pane fade" id="catcher" role="tabpanel">
-                        <h6 class="section-label">Setup (Multiple):</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn athletic"
-                            value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn low"
-                            value="low">Low</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn tall"
-                            value="tall">Tall</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn narrow"
-                            value="narrow">Narrow</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn wide"
-                            value="wide">Wide</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn flexible"
-                            value="flexible">Flexible</button>
-                        <br />
-                        <br />
-                        <h6 class="section-label">Flexibility (Multiple):</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn some"
-                            value="some">Some</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn tonsof"
-                            value="tonsof">Tons of</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn average"
-                            value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn belowaverage"
-                            value="below average">Below Average</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn aboveaverage"
-                            value="above average">Above Average</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn alotof"
-                            value="a lot of">A Lot of</button>
-                    </div>
-                    <div class="tab-pane fade" id="throwing" role="tabpanel">
+                    <div class="tab-pane fade" id="fielding2" role="tabpanel">
                         <h6 class="section-label">Arm Action (Multiple):</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn long"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn long"
                             value="long">Long</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn short"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn short"
                             value="short">Short</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn quick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn quick"
                             value="quick">Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn veryquick"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn veryquick"
                             value="very quick">Very Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn slow"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn slow"
                             value="slow">Slow</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn loose"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn loose"
                             value="loose">Loose</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn stiff"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn stiff"
                             value="stiff">Stiff</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn consistent"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn consistent"
                             value="consistent">Consistent</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn compact"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn compact"
                             value="compact">Compact</button>
                         <br />
                         <br />
                         <h6 class="section-label">Slot:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn overthetop"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn overthetop"
                             value="over-the-top">Over-the-top</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn high3/4"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn high3/4"
                             value="high 3/4">High 3/4</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn 3/4"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn 3/4"
                             value="3/4">3/4</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn low3/4"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn low3/4"
                             value="low 3/4">Low 3/4</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn side"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn side"
                             value="side">Side</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn sub"
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn sub"
                             value="sub">Sub</button>
+                        <br />
+                        <br />
+                        <h6 class="section-label">Accuracy:</h6>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn veryconsistent"
+                            value="very consistent">Very Consistent</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn consistent"
+                            value="consistent">Consistent</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn decent"
+                            value="decent">Decent</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn some"
+                            value="some">Some</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn sporadic"
+                            value="sporadic">Sporadic</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn occasional"
+                            value="occasional">Occasional</button>
+                        <br />
+                        <br />
+                        <h6 class="section-label">Catcher Setup (Multiple):</h6>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn athletic"
+                            value="athletic">Athletic</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn low"
+                            value="low">Low</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn tall"
+                            value="tall">Tall</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn narrow"
+                            value="narrow">Narrow</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn wide"
+                            value="wide">Wide</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn flexible"
+                            value="flexible">Flexible</button>
+                        <br />
+                        <br />
+                        <h6 class="section-label">Catcher Flexibility (Multiple):</h6>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn some"
+                            value="some">Some</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn tonsof"
+                            value="tonsof">Tons of</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn average"
+                            value="average">Average</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn belowaverage"
+                            value="below average">Below Average</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn aboveaverage"
+                            value="above average">Above Average</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn alotof"
+                            value="a lot of">A Lot of</button>
+                        <br />
+                        <br />
+                        <h6>Overall Actions:</h6>
+                        <button class="btn btn-xs btn-outline-primary attnBtn smooth" value="smooth">Smooth</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn aboveaverage" value="above average">Above Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn raw" value="raw">Raw</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn fluid" value="fluid">Fluid</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn projectable" value="projectable">Projectable</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn advanced" value="advanced">Advanced</button>
                     </div>
                     <div class="tab-pane fade" id="pitch" role="tabpanel">
                         <h6>Pitching Delivery Type:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn tallandfall" value="tall-and-fall">Tall-and-fall</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn tiltandtopple" value="tilt-and-topple">Tilt-and-topple</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn dropanddrive" value="drop-and-drive">Drop-and-drive</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn feel" value="feel">Feel</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn uptempo" value="up-tempo">Up-tempo</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn slowtemp" value="slow-tempo">Slow-tempo</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn tallandfall" value="tall-and-fall">Tall-and-fall</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn tiltandtopple" value="tilt-and-topple">Tilt-and-topple</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn dropanddrive" value="drop-and-drive">Drop-and-drive</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn feel" value="feel">Feel</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn uptempo" value="up-tempo">Up-tempo</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn slowtemp" value="slow-tempo">Slow-tempo</button>
                         <br />
                         <br />
                         <h6>Pitching Delivery Effort:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn easy" value="easy">Easy</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn some" value="some">Some</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn high" value="high">High</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn max" value="max">Max</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn easy" value="easy">Easy</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn some" value="some">Some</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn high" value="high">High</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn max" value="max">Max</button>
                         <br />
                         <br />
                         <h6>Arm Angle:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn overthetop" value="over-the-top">Over-the-top</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn high3/4" value="high 3/4">High 3/4</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn 3/4" value="3/4">3/4</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn low3/4" value="low 3/4">Low 3/4</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn side" value="side">Side</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn overthetop" value="over-the-top">Over-the-top</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn high3/4" value="high 3/4">High 3/4</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn 3/4" value="3/4">3/4</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn low3/4" value="low 3/4">Low 3/4</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn side" value="side">Side</button>
                         <br />
                         <br />
                         <h6>Arm Speed:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn lightning" value="lightning">Lightning</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn quick" value="quick">Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn veryquick" value="very quick">Very Quick</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="aboveaverage">Above Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn belowaverage" value="below average">Below Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn consistent" value="consistent">Consistent</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn electric" value="electric">Electric</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn lightning" value="lightning">Lightning</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn quick" value="quick">Quick</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn veryquick" value="very quick">Very Quick</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn aboveaverage" value="aboveaverage">Above Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn belowaverage" value="below average">Below Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn consistent" value="consistent">Consistent</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn electric" value="electric">Electric</button>
                         <br />
                         <br />
                         <h6>Arm Action:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn long" value="long">Long</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn short" value="short">Short</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn loose" value="loose">Loose</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn stiff" value="stiff">Stiff</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn consistent" value="consistent">Consistent</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn long" value="long">Long</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn short" value="short">Short</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn loose" value="loose">Loose</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn stiff" value="stiff">Stiff</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn consistent" value="consistent">Consistent</button>
+                        <br />
+                        <br />
+                        <h6>Overall Actions:</h6>
+                        <button class="btn btn-xs btn-outline-primary attnBtn smooth" value="smooth">Smooth</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn athletic" value="athletic">Athletic</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn average" value="average">Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn aboveaverage" value="above average">Above Average</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn raw" value="raw">Raw</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn fluid" value="fluid">Fluid</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn projectable" value="projectable">Projectable</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn advanced" value="advanced">Advanced</button>
                     </div>
                     <div class="tab-pane fade" id="pitchd" role="tabpanel">
                         <h6>Balance Point:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn tall" value="tall">Tall</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn low" value="low">Low</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn anathletic" value="an athletic">An Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn consistent" value="consistent">Consistent</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn strong" value="strong">Strong</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn tall" value="tall">Tall</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn low" value="low">Low</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn anathletic" value="an athletic">An Athletic</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn consistent" value="consistent">Consistent</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn strong" value="strong">Strong</button>
                         <br />
                         <br />
                         <h6>Shoulder:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn uphill" value="uphill">Uphill</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn downhill" value="downhill">Downhill</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn even" value="even">Even</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn inline" value="inline">Inline</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn fallingoff" value="falling off">Falling Off</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn uphill" value="uphill">Uphill</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn downhill" value="downhill">Downhill</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn even" value="even">Even</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn inline" value="inline">Inline</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn fallingoff" value="falling off">Falling Off</button>
                         <br />
                         <br />
                         <h6>Landing:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn hard" value="hard">Hard</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn soft" value="soft">Soft</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn square" value="square">Square</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn open" value="open">Open</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn closed" value="closed">Closed</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn hard" value="hard">Hard</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn soft" value="soft">Soft</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn square" value="square">Square</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn open" value="open">Open</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn closed" value="closed">Closed</button>
                         <br />
                         <br />
                         <h6>Finish:</h6>
-                        <button class="btn btn-xs btn-outline-danger attBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn recoil" value="recoil">Recoil</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn anupright" value="an upright">An Upright</button>
-                        <button class="btn btn-xs btn-outline-danger attBtn fallingoff" value="falling off">Falling Off</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn athletic" value="athletic">Athletic</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn recoil" value="recoil">Recoil</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn anupright" value="an upright">An Upright</button>
+                        <button onclick="this.classList.add('active')" class="btn btn-xs btn-outline-primary attBtn fallingoff" value="falling off">Falling Off</button>
                     </div>
                     <div class="tab-pane fade" id="pitchaction" role="tabpanel">
                         <select class="custom-select" id="selectPitch">
-                            <option selected>Pitch Type</option>
+                            <option selected>Select Pitch</option>
                             <option value="fastball" id="selectPitch1">Fastball</option>
                             <option value="curveball" id="selectPitch2">Curveball</option>
                             <option value="changeup" id="selectPitch3">Changeup</option>
@@ -513,90 +594,89 @@
                         <br />
                         <br />
                         <h6>Pitch Action:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn running" value="running">Running</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn cutting" value="cutting">Cutting</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn sinking" value="sinking">Sinking</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn tailing" value="tailing">Taling</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn sweeping" value="sweeping">Sweeping</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn gradual" value="gradual">Gradual</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn early" value="early">Early</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn fading" value="fading">Fading</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn swingandmiss" value="swing and miss">Swing and Miss</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn plus" value="plus">Plus</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn some" value="some">Some</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn lack of" value="lack of">Lack of</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn running" value="running">Running</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn cutting" value="cutting">Cutting</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn sinking" value="sinking">Sinking</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn tailing" value="tailing">Taling</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn sweeping" value="sweeping">Sweeping</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn gradual" value="gradual">Gradual</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn early" value="early">Early</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn fading" value="fading">Fading</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn swingandmiss" value="swing and miss">Swing and Miss</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn plus" value="plus">Plus</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn some" value="some">Some</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn lack of" value="lack of">Lack of</button>
                         <br />
                         <br />
                         <h6>Pitch Accuracy:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn veryconsistent" value="very consistent">Very Consistent</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn consistent" value="consistent">Consistent</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn decent" value="decent">Decent</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn some" value="some">Some</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn sporadic" value="sporadic">Sporadic</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn occasional" value="occasional">Occasional</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn lowinthezone" value="low in the zone">Low in the Zone</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn inthezone" value="in the zone">In the Zone</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn aroundthezone" value="around the zone">Around the Zone</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn veryconsistent" value="very consistent">Very Consistent</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn consistent" value="consistent">Consistent</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn decent" value="decent">Decent</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn some" value="some">Some</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn sporadic" value="sporadic">Sporadic</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn occasional" value="occasional">Occasional</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn lowinthezone" value="low in the zone">Low in the Zone</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn inthezone" value="in the zone">In the Zone</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn aroundthezone" value="around the zone">Around the Zone</button>
                         <br />
                         <br />
                         <h6>Pitching Movement:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn hard" value="hard">Hard</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn slight" value="slight">Slight</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn tight" value="tight">Tight</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn straight" value="straight">Straight</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn flat" value="flat">Flat</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn some" value="some">Some</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn heavy" value="heavy">Heavy</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn sharp" value="sharp">Sharp</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn 12/6" value="12/6">12/6</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn 11/5" value="11/5">11/5</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn 10/4" value="10/4">10/4</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn 1/7" value="1/7">1/7</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn 2/8" value="2/7">2/7</button>
-                    </div>
-                    <div class="tab-pane fade" id="overall" role="tabpanel">
-                        <select class="custom-select" id="selectOverall">
-                            <option selected>Field Position</option>
-                            <option value="infield" id="selectOverall1">Infield</option>
-                            <option value="outfield"id="selectOverall2">Outfield</option>
-                            <option value="catcher" id="selectOverall3">Catcher</option>
-                        </select>
-                        <br />
-                        <br />
-                        <button class="btn btn-xs btn-outline-danger attnBtn smooth" value="smooth">Smooth</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="above average">Above Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn raw" value="raw">Raw</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn fluid" value="fluid">Fluid</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn projectable" value="projectable">Projectable</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn advanced" value="advanced">Advanced</button>
-                        <br />
-                        <br />
-                        <h6>Pitching:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn smooth" value="smooth">Smooth</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="above average">Above Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn raw" value="raw">Raw</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn fluid" value="fluid">Fluid</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn projectable" value="projectable">Projectable</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn advanced" value="advanced">Advanced</button>
-                        <br />
-                        <br />
-                        <h6>Hitting:</h6>
-                        <button class="btn btn-xs btn-outline-danger attnBtn smooth" value="smooth">Smooth</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn athletic" value="athletic">Athletic</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn average" value="average">Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn aboveaverage" value="above average">Above Average</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn raw" value="raw">Raw</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn fluid" value="fluid">Fluid</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn projectable" value="projectable">Projectable</button>
-                        <button class="btn btn-xs btn-outline-danger attnBtn advanced" value="advanced">Advanced</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn hard" value="hard">Hard</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn slight" value="slight">Slight</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn tight" value="tight">Tight</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn straight" value="straight">Straight</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn flat" value="flat">Flat</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn some" value="some">Some</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn heavy" value="heavy">Heavy</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn sharp" value="sharp">Sharp</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn 12/6" value="12/6">12/6</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn 11/5" value="11/5">11/5</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn 10/4" value="10/4">10/4</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn 1/7" value="1/7">1/7</button>
+                        <button class="btn btn-xs btn-outline-primary attnBtn 2/8" value="2/7">2/7</button>
                     </div>
                 </div>
                 <br />
-                <div> 
+            </div>
+            <br />
+            <div class="col-md-3 col-lg-6">
+                <label for="playerParagraphMobile" class="d-md-none mt-2"><!--Player Name Here-->Player Paragraph:</label>
+                <div class="my-1">
+                    <div class="custom-control custom-switch d-md-none mr-2 float-left">
+                        <input type="checkbox" class="custom-control-input" id="60YardFirst">
+                        <label class="custom-control-label" for="60YardFirst">60-Yard First</label>
+                    </div>
+                    <div class="custom-control custom-switch d-md-none float-left">
+                        <input type="checkbox" class="custom-control-input" id="hittingAfterMobile">
+                        <label class="custom-control-label" for="hittingAfterMobile">Hitting After</label>
+                    </div>
+                </div>
+                <textarea id="playerParagraphMobile" class="embed-responsive embed-responsive-21by9 my-3 d-md-none">
+
+                </textarea>
+                <div class="d-none d-md-block">
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <iframe class="embed-responsive-item" title="Player Video" src="https://www.youtube.com/embed/1fAGC0yJCwU"
+                            allowfullscreen></iframe>
+                    </div>
+                    <br />
+                    <div class="d-none d-md-block">
+                        <label for="playerParagraph"><!--Player Name Here--> Player Paragraph:</label>
+                        <div class="custom-control custom-switch  float-right">
+                            <input type="checkbox" class="custom-control-input" id="hittingAfterDesktop">
+                            <label class="custom-control-label" for="hittingAfterDesktop">Hitting After</label>
+                        </div>
+                        <div class="custom-control custom-switch mr-2 float-right">
+                            <input type="checkbox" class="custom-control-input" id="60YardFirstDesktop">
+                            <label class="custom-control-label" for="60YardFirstDesktop">60-Yard First</label>
+                        </div>
+                        <br />
+                        <textarea id="playerParagraph" class="embed-responsive embed-responsive-21by9">
+        
+                        </textarea>
+                    </div>
+                </div>
+                <div class="my-2"> 
                     <input id="exitVelo" class="playerAtt" placeholder="Exit Velo" />
                     <input id="infieldVelo" class="playerAtt my-1" placeholder="Infield Velo" />
                     <input id="outfieldVelo" class="playerAtt my-1" placeholder="Outfield Velo" />
@@ -614,21 +694,6 @@
                     <input id="forkVelo" class="playerAtt my-1" placeholder="Fork Velo" />
                 </div>
             </div>
-            <br />
-            <div class="col-md-3 col-lg-6 mt-2">
-                <div class="embed-responsive embed-responsive-21by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1fAGC0yJCwU"
-                        allowfullscreen></iframe>
-                </div>
-                <br />
-                <label for="playerParagraph">Player Paragraph:</label>
-                <br />
-                <textarea id="playerParagraph" class="embed-responsive embed-responsive-21by9">
-
-                </textarea>
-                <br />
-                <br />
-            </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
@@ -640,9 +705,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
-    <script src="js/submit.js"></script>
     <!--<script src="js/checkAuth.js"></script>-->
 </body>
 </html>
