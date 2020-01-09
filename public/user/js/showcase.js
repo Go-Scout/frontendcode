@@ -1,3 +1,11 @@
+const selectBtn = document.getElementsByClassName('.attBtn')
+let selected
+selectBtn.onclick = () => {
+    if (selected) selectBtn.classList.remove('.active')
+    this.classList.add('.active')
+    console.log(this)
+}
+//Auth System
 var firebaseConfig = {
     apiKey: "AIzaSyDOjiZ--U5gWKZTMyvd3juQle-4OQuHGpE",
     authDomain: "go-scout.firebaseapp.com",
@@ -10,14 +18,14 @@ var firebaseConfig = {
 }
 firebase.initializeApp(firebaseConfig)
 const auth = firebase.auth()
-firebase.auth().onAuthStateChanged(function(user) {
+//firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         alert(`Welcome, ${user.email}`)
     } else {
         alert("You need to login first!")
         window.location = "https://go-scout.web.app/index"
     }
-})
+//})
 //logout 
 const logout = document.querySelector('#logout')
 logout.addEventListener('click', (e) => {

@@ -28,14 +28,14 @@
       <link rel="apple-touch-startup-image" href="apple-splash-2688-1242.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
       <link rel="apple-touch-startup-image" href="apple-splash-1125-2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
       <link rel="apple-touch-startup-image" href="apple-splash-2436-1125.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-      <link rel="apple-touch-startup-image" href="apple-splash-828-1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-      <link rel="apple-touch-startup-image" href="apple-splash-1792-828.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+      <link rel="apple-touch-startup-image" href="apple-splash-828-1792.png"  media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+      <link rel="apple-touch-startup-image" href="apple-splash-1792-828.png"  media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
       <link rel="apple-touch-startup-image" href="apple-splash-1242-2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
       <link rel="apple-touch-startup-image" href="apple-splash-2208-1242.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
-      <link rel="apple-touch-startup-image" href="apple-splash-750-1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-      <link rel="apple-touch-startup-image" href="apple-splash-1334-750.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
-      <link rel="apple-touch-startup-image" href="apple-splash-640-1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
-      <link rel="apple-touch-startup-image" href="apple-splash-1136-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+      <link rel="apple-touch-startup-image" href="apple-splash-750-1334.png"  media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+      <link rel="apple-touch-startup-image" href="apple-splash-1334-750.png"  media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+      <link rel="apple-touch-startup-image" href="apple-splash-640-1136.png"  media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+      <link rel="apple-touch-startup-image" href="apple-splash-1136-640.png"  media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 
 </head>
   <body>
@@ -113,15 +113,14 @@
                   <label for="message-text" class="col-form-label">Password:</label>
                   <input id="signup-password" type="password" placeholder="Password" style="width: 100%;">
                 </div>
-                  
-                    <input type="checkbox" name="checkbox" value="check" id="agree" onclick="showButton()"> I have read and agree to the Terms and Conditions.
+                  <form>
+                    <input type="checkbox" name="checkbox" value="check" id="agree" onclick="showButton()"> I have read and agree to the <a href="terms.pdf">Terms and Conditions.</a>
                     <br>
                     <br>
                     <input type="submit" id="loginSubmit" class="btn btn-danger noDisplay" name="submit" value="Login">
                     <br>
                     <p class="text-danger" id="sumError"></p>
                   </form>
-              
             </div>
           </div>
       </div>
@@ -176,8 +175,6 @@
           <a href="mailto:alexdelrio@prepbaseballreport.com">
             <span class="oi oi-envelope-closed" style="color: black; font-size: 24px;" title="Mail Icon" aria-label="Mail Icon"></span>
           </a>
-          <br>
-          <img src="img/homerun.svg" width="200px" height="200px" alt="Logo">
         </div>
       </div>
       <br>
@@ -194,6 +191,5 @@
     <script>
       AOS.init()
     </script>
-  
-
-</body></html><!--Copyright (C) GoScout 2020-->
+  </body>
+</html>
