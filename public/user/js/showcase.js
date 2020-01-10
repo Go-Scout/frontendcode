@@ -1,7 +1,7 @@
 document.querySelectorAll(".attBtn").forEach(function(i) {
   i.onclick = (evt) => {
     const e = evt || window.event;
-    const parent = e.target.parentNode;
+    const parent = e.target.parentNode || e.srcElement.parentNode;
     const target = e.target || e.srcElement;
 
     if (parent.querySelector(".active")) parent.querySelector(".active").classList.remove("active");
