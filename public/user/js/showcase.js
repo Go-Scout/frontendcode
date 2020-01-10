@@ -1,5 +1,5 @@
-document.querySelectorAll(".attBtn").forEach(function(i) {
-  i.onclick = (evt) => {
+document.querySelectorAll(".attBtn").forEach(function(btn) {
+  btn.onclick = (evt) => {
     const e = evt || window.event;
     const parent = e.target.parentNode || e.srcElement.parentNode;
     const target = e.target || e.srcElement;
