@@ -34,6 +34,9 @@ input:hover, input:active, input:focus {
     background-color: gray;
     color: white;
 }
+.btnGroup {
+    margin-bottom: 1em;
+}
 .playerAtt {
     width: 8.125em;
 }
