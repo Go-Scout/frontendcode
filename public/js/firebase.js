@@ -1,12 +1,12 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyDOjiZ--U5gWKZTMyvd3juQle-4OQuHGpE",
-    authDomain: "go-scout.firebaseapp.com",
-    databaseURL: "https://go-scout.firebaseio.com",
-    projectId: "go-scout",
-    storageBucket: "go-scout.appspot.com",
-    messagingSenderId: "376398836043",
-    appId: "1:376398836043:web:abbd1bb48d5dc1b1b538ce",
-    measurementId: "G-044W9K81T1"
+const firebaseConfig = {
+  apiKey: "AIzaSyDOjiZ--U5gWKZTMyvd3juQle-4OQuHGpE",
+  authDomain: "go-scout.firebaseapp.com",
+  databaseURL: "https://go-scout.firebaseio.com",
+  projectId: "go-scout",
+  storageBucket: "go-scout.appspot.com",
+  messagingSenderId: "376398836043",
+  appId: "1:376398836043:web:abbd1bb48d5dc1b1b538ce",
+  measurementId: "G-044W9K81T1"
 }
 firebase.initializeApp(firebaseConfig)
 //user creation
@@ -62,3 +62,43 @@ loginForm.addEventListener('submit', (e) => {
     errorMessage.innerHTML = err.message
   })
 })
+//form
+const form = document.querySelector("#contact")
+const inputEmail = form.querySelector("#emailInput")
+const inputName = form.querySelector("#nameInput")
+const inputMessage = form.querySelector('#messageInput')
+const submitBtn = form.querySelector('#sendBtn')
+const sent = form.querySelector('#sent')
+const firebasePush = (input) => {
+  //prevents from braking
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig)
+  }
+
+  //push itself
+  var mailsRef = firebase
+    .database()
+    .ref("emails")
+    .push()
+    .set({
+      mail: inputEmail.value,
+      name: inputName.value,
+      message: inputMessage.value
+    })
+}
+//What to do if it is sent
+const allIsWell = () => {
+  submitBtn.setAttribute('disabled', '')
+  sent.innerHTML = "Your message has been sent!"
+}
+//push on form submit
+if (form) {
+  form.addEventListener("submit", (evt) => {
+    evt.preventDefault()
+    firebasePush(inputEmail, inputName, inputMessage)
+
+    //shows alert if everything went well.
+    return allIsWell()
+  
+  })
+}

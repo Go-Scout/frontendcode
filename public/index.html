@@ -163,6 +163,7 @@
               <button type="submit" class="btn" id="sendBtn">
                 <span class="oi oi-location" title="Send Icon" aria-label="Send Icon"></span> Submit
               </button>
+              <p id="sent" class="text-success"><i></i></p>
           </form>
         </div>
         <div class="col-md-2 offset-md-2" data-aos="fade-up-left" data-aos-once="true">
@@ -175,7 +176,11 @@
           <a href="mailto:alexdelrio@prepbaseballreport.com">
             <span class="oi oi-envelope-closed" style="color: black; font-size: 24px;" title="Mail Icon" aria-label="Mail Icon"></span>
           </a>
+          <br />
+          <br />
+          <img class="d-none d-md-block" src="img/logo2.jpg" alt="GoScout Logo" />
         </div>
+        <img class="d-sm-block d-md-none" style="margin: 0 auto 0 auto;" src="img/logo2.jpg" alt="GoScout Logo" />
       </div>
       <br>
       <p class="text-center text-muted">Copyright (C) 2020 GoScout, LLC</p>
@@ -187,7 +192,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
-    <script src="js/auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+    <script src="js/firebase.js"></script>
     <script>
       AOS.init()
     </script>

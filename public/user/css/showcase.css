@@ -24,10 +24,6 @@ input:hover, input:active, input:focus {
     line-height: .5;
     border-radius: .2rem;
 }
-.btn-xs:hover, .btn-xs:active, .btn-xs:focus {
-    transform: scale(1.1);
-    margin: 5px;
-}
 .btn {
     border-radius: 20px;
 }
