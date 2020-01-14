@@ -1,5 +1,5 @@
 @import url("../css/--secondary-gradient");
-* { box-sizing: border-box; }
+* { -webkit-box-sizing: border-box; box-sizing: border-box; scroll-behavior: smooth; }
 /* Default Stylings */
 html, body {
     width: 100%;
@@ -14,6 +14,8 @@ button {
 }
 input:hover, input:active, input:focus {
     border-color: #6610f2;
+    -webkit-transition: ease-in 1.2s;
+    -o-transition: ease-in 1.2s;
     transition: ease-in 1.2s;
     border-width: 1.5px;
 }

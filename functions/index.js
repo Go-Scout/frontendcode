@@ -32,7 +32,7 @@ var goMail = function (message, name, email) {
         from: gmailEmail, // sender address
         to: 'alexdelrio@prepbaseballreport.com', // list of receivers
         subject: 'Contact Form Received', // Subject line
-        text: "Message for you:" + message, // plain text body
+        text: "Sender's Email:" + email + "Sender's Name" + name + "Message for you:" + message, // plain text body
         html: ``// html body
     }
 
