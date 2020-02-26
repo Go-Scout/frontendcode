@@ -25,7 +25,7 @@
               <a class="nav-link nav-link-ltr navLink pb-3" href="../index.html">Home</a>
             </li>
             <li class="nav-item active px-2" id="logout">
-              <a class="nav-link nav-link-ltr navLink pb-3" href="#">Logout</a>
+              <a class="nav-link nav-link-ltr navLink pb-3" id="logout" href="#">Logout</a>
             </li>
         </div>
     </nav>
@@ -35,14 +35,14 @@
             <span class="oi oi-data-transfer-download"
                 style="color: white; font-size: 0.8rem;" title="Download Icon" aria-label="Download Icon"></span>
         </button>
-        <div class="d-sm-flex d-none" style="justify-content: center;">
-            <select class="custom-selectButton btn btn-outline-primary mr-1" class="selectPast">
+        <div class="d-sm-flex d-md-none" style="justify-content: space-evenly;">
+            <select class="custom-selectButton btn btn-outline-primary selectPast">
                 <option selected>Past Showcases</option>
                 <option class="pShowcase#1">Showcase #1</option>
                 <option class="pShowcase#2">Showcase #2</option>
                 <option class="pShowcase#3">Showcase #3</option>
             </select>
-            <select class="custom-selectButton btn btn-outline-primary mr-1" class="selectFuture">
+            <select class="custom-selectButton btn btn-outline-primary selectFuture">
                 <option selected>Upcoming Showcases</option>
                 <option class="uShowcase#1">Showcase #1</option>
                 <option class="uShowcase#2">Showcase #2</option>
@@ -54,19 +54,19 @@
         <div class="row">
             <div class="col-md-9 col-lg-6">
                 <div id="buttonsDesktop" class="d-inline-flex mb-1">
-                    <select class="custom-selectButton btn btn-outline-primary mr-1" class="selectPlayer">
+                    <select class="custom-selectButton btn btn-outline-primary mr-1 selectPlayer">
                         <option selected>Select Player</option>
                         <option class="sPlayer#1">Select Player #1</option>
                         <option class="sPlayer#2">Select Player #2</option>
                         <option class="sPlayer#3">Select Player #3</option>
                     </select>
-                    <select class="custom-selectButton btn btn-outline-primary mr-1 d-sm-none d-md-inline-block" class="selectPast">
+                    <select class="custom-selectButton btn btn-outline-primary mr-1 d-none d-md-inline-block selectPast">
                         <option selected>Past Showcases</option>
                         <option class="pShowcase#1">Showcase #1</option>
                         <option class="pShowcase#2">Showcase #2</option>
                         <option class="pShowcase#3">Showcase #3</option>
                     </select>
-                    <select class="custom-selectButton btn btn-outline-primary mr-1 d-none d-md-inline-block" class="selectFuture">
+                    <select class="custom-selectButton btn btn-outline-primary mr-1 d-none d-md-inline-block selectFuture">
                         <option selected>Upcoming Showcases</option>
                         <option class="uShowcase#1">Showcase #1</option>
                         <option class="uShowcase#2">Showcase #2</option>
@@ -234,24 +234,24 @@
                             <button class="btn btn-xs btn-outline-primary attBtn high"
                                 value="high">High</button>
                         </div>
-                        <div class="btnGroup">
+                        <div class="btnGroupMulti">
                             <h6 class="section-label">Stance (Multiple):</h6>
-                            <button class="btn btn-xs btn-outline-primary attBtn balanced"
-                                value="balanced">Balanced</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn strong"
-                                value="strong">Strong</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn athletic"
-                                value="athletic">Athletic</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn crouched"
-                                value="crouched">Crouched</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn closed"
-                                value="closed">Closed</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn open"
-                                value="open">Open</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn wide"
-                                value="wide">Wide</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn tall"
-                                value="tall">Tall</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti balanced"
+                                value="balanced" onclick="this.classList.add('active')">Balanced</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti strong"
+                                value="strong" onclick="this.classList.add('active')">Strong</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti athletic"
+                                value="athletic" onclick="this.classList.add('active')">Athletic</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti crouched"
+                                value="crouched" onclick="this.classList.add('active')">Crouched</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti closed"
+                                value="closed" onclick="this.classList.add('active')">Closed</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti open"
+                                value="open" onclick="this.classList.add('active')">Open</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti wide"
+                                value="wide" onclick="this.classList.add('active')">Wide</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti tall"
+                                value="tall" onclick="this.classList.add('active')">Tall</button>
                         </div>
                         <div class="btnGroup">
                             <h6 class="section-label">Barrels:</h6>
@@ -385,24 +385,24 @@
                     <div class="tab-pane fade" id="fielding2" role="tabpanel">
                         <div class="btnGroup">
                             <h6 class="section-label">Arm Action (Multiple):</h6>
-                            <button class="btn btn-xs btn-outline-primary attBtn long"
-                                value="long">Long</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn short"
-                                value="short">Short</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn quick"
-                                value="quick">Quick</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn veryquick"
-                                value="very quick">Very Quick</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn slow"
-                                value="slow">Slow</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn loose"
-                                value="loose">Loose</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn stiff"
-                                value="stiff">Stiff</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn consistent"
-                                value="consistent">Consistent</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn compact"
-                                value="compact">Compact</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti long"
+                                value="long" onclick="this.classList.add('active')">Long</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti short"
+                                value="short" onclick="this.classList.add('active')">Short</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti quick"
+                                value="quick" onclick="this.classList.add('active')">Quick</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti veryquick"
+                                value="very quick" onclick="this.classList.add('active')">Very Quick</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti slow"
+                                value="slow" onclick="this.classList.add('active')">Slow</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti loose"
+                                value="loose" onclick="this.classList.add('active')">Loose</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti stiff"
+                                value="stiff" onclick="this.classList.add('active')">Stiff</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti consistent"
+                                value="consistent" onclick="this.classList.add('active')">Consistent</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti compact"
+                                value="compact" onclick="this.classList.add('active')">Compact</button>
                         </div>
                         <div class="btnGroup">
                             <h6 class="section-label">Slot:</h6>
@@ -436,33 +436,33 @@
                         </div>
                         <div class="btnGroup">
                             <h6 class="section-label">Catcher Setup (Multiple):</h6>
-                            <button class="btn btn-xs btn-outline-primary attBtn athletic"
-                                value="athletic">Athletic</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn low"
-                                value="low">Low</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn tall"
-                                value="tall">Tall</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn narrow"
-                                value="narrow">Narrow</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn wide"
-                                value="wide">Wide</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn flexible"
-                                value="flexible">Flexible</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti athletic"
+                                value="athletic" onclick="this.classList.add('active')">Athletic</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti low"
+                                value="low" onclick="this.classList.add('active')">Low</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti tall"
+                                value="tall" onclick="this.classList.add('active')">Tall</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti narrow"
+                                value="narrow" onclick="this.classList.add('active')">Narrow</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti wide"
+                                value="wide" onclick="this.classList.add('active')">Wide</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti flexible"
+                                value="flexible" onclick="this.classList.add('active')">Flexible</button>
                         </div>
                         <div class="btnGroup">
                             <h6 class="section-label">Catcher Flexibility (Multiple):</h6>
-                            <button class="btn btn-xs btn-outline-primary attBtn some"
-                                value="some">Some</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn tonsof"
-                                value="tonsof">Tons of</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn average"
-                                value="average">Average</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn belowaverage"
-                                value="below average">Below Average</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn aboveaverage"
-                                value="above average">Above Average</button>
-                            <button class="btn btn-xs btn-outline-primary attBtn alotof"
-                                value="a lot of">A Lot of</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti some"
+                                value="some" onclick="this.classList.add('active')">Some</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti tonsof"
+                                value="tonsof" onclick="this.classList.add('active')">Tons of</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti average"
+                                value="average" onclick="this.classList.add('active')">Average</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti belowaverage"
+                                value="below average" onclick="this.classList.add('active')">Below Average</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti aboveaverage"
+                                value="above average" onclick="this.classList.add('active')">Above Average</button>
+                            <button class="btn btn-xs btn-outline-primary attBtnMulti alotof"
+                                value="a lot of" onclick="this.classList.add('active')">A Lot of</button>
                         </div>
                         <div class="btnGroup">
                             <h6 class="section-label">Overall Actions:</h6 c>
@@ -634,7 +634,11 @@
                     </div>
                     <div class="custom-control custom-switch d-md-none float-left">
                         <input type="checkbox" class="custom-control-input" id="hittingAfterMobile">
-                        <label class="custom-control-label" for="hittingAfterMobile">Hitting After</label>
+                        <label class="custom-control-label" for="hittingAfterMobile">Hitting Velo After</label>
+                    </div>
+                    <div class="custom-control custom-switch d-md-none float-left">
+                        <input type="checkbox" class="custom-control-input" id="fieldingAfterMobile">
+                        <label class="custom-control-label" for="hittingAfterMobile">Fielding Velo After</label>
                     </div>
                 </div>
                 <textarea id="playerParagraphMobile" class="embed-responsive embed-responsive-21by9 my-3 d-md-none">
@@ -675,6 +679,10 @@
                         <div class="custom-control custom-switch  float-right">
                             <input type="checkbox" class="custom-control-input" id="hittingAfterDesktop">
                             <label class="custom-control-label" for="hittingAfterDesktop">Hitting After</label>
+                        </div>
+                        <div class="custom-control custom-switch mr-2 float-right">
+                            <input type="checkbox" class="custom-control-input" id="fieldingAfterDesktop">
+                            <label class="custom-control-label" for="60YardFirstDesktop">Fielding After</label>
                         </div>
                         <div class="custom-control custom-switch mr-2 float-right">
                             <input type="checkbox" class="custom-control-input" id="60YardFirstDesktop">
